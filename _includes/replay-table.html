@@ -1,0 +1,66 @@
+{% for replay in site.data[include.board_name] %}
+
+
+{% endfor %}
+
+
+
+<div class="leaderboard">
+    <table>
+        <tr>
+            {% if include.is_leaderboard %}<th class="align-right">#</th>{% endif %}
+            <th>Player</th>
+            <th>Date</th>
+            <th>Team Name</th>
+            <th>Result</th>
+            <th class="align-right hidden">Money</th>
+            <th class="align-right hidden">Inv. Value</th>
+            <th class="align-right">Score</th>
+            <th class="align-right">Turns</th>
+            <th>Team</th>
+            {% unless include.is_roguelocke %}<th>Starting Items</th>{% endunless %}
+            <th>Version</th>
+            <th>Seed</th>
+            <th>Replay</th>
+            <!--th>Notes</th-->
+        </tr>
+        {% if include.is_leaderboard %}
+            {% assign count = 0 %}
+        {% endif %}
+        
+        {% for replay in site.data[include.board_name] %}
+            <tr>
+                {% if include.is_leaderboard %}{% assign count = count | plus: 1 %}<td class="align-right">{{count}}</td>{% endif %}
+                <td>{{replay["Player"]}}</td>
+                <td>{{replay["Date"]}}</td>
+                <td>{{replay["Team Name"]}}</td>
+                <td>{{replay["Result"]}} on {% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</td>
+                <td class="align-right hidden">{{replay["Money"]}}</td>
+                <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
+                <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
+                <td class="align-right">{{replay["Turns"]}}</td>
+                <td>
+                    {% assign members = replay["Team"] | split: "," %}
+                    {%- for member in members -%}
+                        {%- assign species = member | split: "/" | last -%}
+                        {%- assign nickname = member | split: "/" | first -%}<figure>
+                            <img src="/images/portraits/{{species | slugify}}.png" alt="{{species | split: "|" | first }}" title="{{species | split: "|" | first }}" class="portrait">
+                            <figcaption>{{nickname}}</figcaption>
+                        </figure>{%- endfor -%}
+                </td>
+                {% unless include.is_roguelocke %}<td>{% assign items = replay["Starting Items"] | split: "," %}
+                    {% for item in items %}{{item}}<br>{% endfor %}
+                </td>{% endunless %}
+                <td>
+                    {{ replay["Version"] }}{% if replay["Gender Unlock"] %}<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>{% endif %}
+                </td>
+                <td class="monospace">{{replay["Seed"]}}</td>
+                <td>
+                    {% if replay["File"] %}{{site.baseurl}}<a href="/replays/{{page.title | slugify}}/{{replay["File"]}}" target="_blank">{{replay["File"]}}</a>{% else %}{{replay["File"]}}{% endif %}
+                    {% if replay["Video URL"] %}<br><a href="{{replay["Video URL"]}}" class="video-link" target="_blank">Video</a>{% endif %}
+                </td>
+                <!--td>{{replay["Notes"]}}</td-->
+            </tr>
+        {% endfor %}
+    </table>
+</div>

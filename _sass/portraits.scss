@@ -1,0 +1,22 @@
+figure {
+    display: inline-block;
+    margin: 0 .1em;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.portrait {
+    image-rendering: crisp-edges;
+    width: 4em;
+    height: 4em;
+    border-radius: .5em;
+    border-style: solid;
+    border-width: 1px;
+    //transform: scaleX(-1);
+
+    flex: initial;
+}

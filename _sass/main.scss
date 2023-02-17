@@ -1,0 +1,119 @@
+html {
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 36pt;
+
+	padding: .125em;
+	padding-top: 0;
+
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 0.25em;
+
+    border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+
+	div {
+		padding: .125em;
+		margin-top: 0;
+
+		border-bottom-left-radius: 0.35em;
+		border-bottom-right-radius: 0.35em;
+	}
+}
+
+h2, h3 {
+	width: fit-content;
+
+	padding: .25em;
+	padding-left: 0;
+
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+
+	div {
+		padding: .25em;
+		margin-left: 0;
+
+		border-top-right-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
+	}
+
+}
+
+.inner {
+	margin: 0.15em;
+	padding: 0.25em 0.5em;
+	border-radius: .75em;
+}
+
+body {
+	font-family: "Merriweather Sans", sans-serif;
+	font-weight: 350;
+	font-size: 10pt;
+	margin: 0;
+}
+
+table {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+th, td {
+	text-align: left;
+}
+
+.type-icon {
+    height: 1.2em;
+	display: inline;
+	vertical-align: text-top;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.monospace {
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 12pt;
+}
+
+.video-link {
+	font-size: 8pt;
+}
+
+.hidden {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+nav {
+	border-radius: .5em;
+	padding: .6em .4em;
+	text-align: center;
+
+	width: fit-content;
+	margin: auto;
+
+	a, strong {
+		padding: 0.25em 1em;
+	}
+
+	a:first-child, strong:first-child {
+        border-top-left-radius: 0.25em;
+		border-bottom-left-radius: 0.25em;
+    }
+
+    a:last-child, strong:last-child {
+        border-top-right-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
+    }
+}

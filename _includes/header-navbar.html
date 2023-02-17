@@ -1,0 +1,19 @@
+<h1><div>PMDO Leaderboards</div></h1>
+
+<nav>
+    {% if page.title == "About" %}
+        <strong>About</strong>
+    {% else %}
+        <a href="/">About</a>
+    {% endif %}
+    {% assign boards = site.leaderboards | where: "hidden", false %}
+    {% for board in boards %}
+        {% if board.title == page.title %}
+            <strong>{{board.title}}</strong>
+        {% else %}
+            <a href="{{board.url}}">{{board.title}}</a>
+        {% endif %}
+    {% endfor %}
+</nav>
+
+<h2 title="{{page.secret}}"><div>{{page.title}}</div></h2>

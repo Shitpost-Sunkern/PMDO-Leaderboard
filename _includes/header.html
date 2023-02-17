@@ -1,0 +1,31 @@
+<h1><div>PMDO Leaderboards</div></h1>
+
+<script>
+    function change_page(page) {
+        window.location.href = page;
+    }
+</script>
+
+<div class="dropdown">
+    <select onchange="change_page(this.value)">
+        <optgroup label="Site">
+            <option value="/">About</option>
+        </optgroup>
+
+        {% assign groups_sorted = site.groups | sort: "sort-order" %}
+        {% for group in groups_sorted %}
+            {% assign group_name = group.id | split: "/" | last %}
+            {% assign boards = site.leaderboards | where: "hidden", false | where_exp: "board", "board.group == group_name" | sort: "sort-order" %}
+            {% assign count = boards | size %}
+            {% if count > 0 %}
+                <optgroup label="{{group.title}}">
+                    {% for board in boards %}
+                        <option value="{{board.url}}" {% if board.title == page.title %}selected{% endif %}>{{board.title}}</option>
+                    {% endfor %}
+                </optgroup>
+            {% endif %}
+        {% endfor %}
+    </select>
+</div>
+
+<h2 title="{{page.secret}}"><div>{{page.title}}</div></h2>

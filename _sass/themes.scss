@@ -1,0 +1,358 @@
+// Solid Themes
+
+body.theme-guildmaster {
+	--text-color: black;
+	--fg-color-light1: #fffff9;
+	--fg-color-light2: rgb(253, 232, 189);
+	--fg-color-dark1: #960;
+	--fg-color-dark2: #630;
+	--fg-color-dark3: rgba(32, 16, 0, 0.5);
+	--bg-color-1: rgb(158, 221, 250);
+	--bg-color-2: rgb(110, 167, 252);
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-sickly-hollow {
+	--text-color: black;
+	--fg-color-light1: #f7e6ff;
+	--fg-color-light2: #c296d7;
+	--fg-color-dark1: #609;
+	--fg-color-dark2: #306;
+	--fg-color-dark3: rgba(16, 0, 32, 0.5);
+	--bg-color-1: rgb(123, 156, 107);
+	--bg-color-2: rgb(82, 90, 41);
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-secret-garden {
+	--text-color: black;
+	--fg-color-light1: #f9fff0;
+	--fg-color-light2: #bd7;
+	--fg-color-dark1: #690;
+	--fg-color-dark2: #360;
+	--fg-color-dark3: rgba(16, 32, 0, 0.5);
+	--bg-color-1: rgb(199, 249, 255);
+	--bg-color-2: rgb(110, 219, 252);
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-joyous-tower {
+	--text-color: black;
+	--fg-color-light1: #f8fefe;
+	--fg-color-light2: #cedede;
+	--fg-color-dark1: #8cadbd;
+	--fg-color-dark2: #6b7b84;
+	--fg-color-dark3: rgba(37, 45, 45, 0.5);
+	--bg-color-1: #bd738c;
+	--bg-color-2: #9c4a4a;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+// Gradient Themes
+
+body.theme-rescue-team {
+	--text-color: black;
+	--fg-color-light1: rgba(255, 255, 255, 0.9);
+	--fg-color-light2: rgba(255, 255, 255, 0.5);
+	--fg-color-dark1-top: #ff302b;
+	--fg-color-dark1-bottom: #008bde;
+	--fg-color-dark2: #0a6aab;
+	--fg-color-dark3: rgba(4, 25, 44, 0.5);
+	--bg-color-1: #1078e8;
+	--bg-color-2: #60c0e8;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-image: linear-gradient(var(--fg-color-dark1-top), var(--fg-color-dark1-bottom),);
+		background-repeat: no-repeat;
+
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+// Unused Themes
+
+/* body.theme-spooky {
+	background-image: linear-gradient(rgb(109, 117, 187), rgb(91, 83, 119),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	td, nav a {
+		background-color: #ecf;
+	}
+
+	th, nav a:hover, nav strong, h2 div, h1 div {
+		background-color: #c296d7;
+	}
+
+	div.leaderboard, nav, h1, h2, div.dropdown {
+		background-color: #609;
+		border-bottom: 2px solid #306;
+		box-shadow: 2px 2px 4px rgba(16, 0, 32, 0.5);
+	}
+
+	.portrait {
+		border-color: #306;
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: rgb(0, 93, 233);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: rgb(235, 200, 0);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: black;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+		
+	}
+}
+*/

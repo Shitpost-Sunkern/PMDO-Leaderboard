@@ -1,0 +1,120 @@
+{% include head.html %}
+
+<body class="{{page.theme}}">
+
+    {% include header.html %}
+
+    <div class="leaderboard">
+        <table>
+            <tr>
+                <th class="align-right">#</th>
+                <th>Player</th>
+                <th>Date</th>
+                <th>Team Name</th>
+                <th>Result</th>
+                <th class="align-right hidden">Money</th>
+                <th class="align-right hidden">Inv. Value</th>
+                <th class="align-right">Score</th>
+                <th class="align-right">Turns</th>
+                <th>Team</th>
+                {% if page.board_type != "roguelocke" %}<th>Starting Items</th>{% endif %}
+                <th>Version</th>
+                <th>Seed</th>
+                <th>Replay</th>
+                <!--th>Notes</th-->
+            </tr>
+            {% assign count = 0 %}
+            {% assign board_name = page.title | slugify%}
+            {% for replay in site.data[board_name] %}
+                {% assign count = count | plus: 1%}
+                <tr>
+                    <td class="align-right">{{count}}</td>
+                    <td>{{replay["Player"]}}</td>
+                    <td>{{replay["Date"]}}</td>
+                    <td>{{replay["Team Name"]}}</td>
+                    <td>{{replay["Result"]}} on {% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</td>
+                    <td class="align-right hidden">{{replay["Money"]}}</td>
+                    <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
+                    <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
+                    <td class="align-right">{{replay["Turns"]}}</td>
+                    <td>
+                        {% assign members = replay["Team"] | split: "," %}
+                        {% for member in members %}
+                            {% assign species = member | split: "/" | last %}
+                            {% assign nickname = member | split: "/" | first %}<figure>
+                                <img src="/images/portraits/{{species | slugify}}.png" alt="{{species}}" title="{{species}}" class="portrait">
+                                <figcaption>{{nickname}}</figcaption>
+                            </figure>{% endfor %}
+                    </td>
+                    {% if page.board_type != "roguelocke" %}<td>{% assign items = replay["Starting Items"] | split: "," %}
+                        {% for item in items %}{{item}}<br>{% endfor %}
+                    </td>{% endif %}
+                    <td>{{replay["Version"]}}</td>
+                    <td class="monospace">{{replay["Seed"]}}</td>
+                    <td>
+                        {% if replay["File"] %}{{site.baseurl}}<a href="/replays/{{page.title | slugify}}/{{replay["File"]}}" target="_blank">{{replay["File"]}}</a>{% else %}{{replay["File"]}}{% endif %}
+                        {% if replay["Video URL"] %}<br><a href="{{replay["Video URL"]}}" class="video-link" target="_blank">Video</a>{% endif %}
+                    </td>
+                    <!--td>{{replay["Notes"]}}</td-->
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% assign outdated = page.title | slugify | append: "-outdated" %}
+    {% if site.data[outdated] %}
+        <h3><div>Outdated runs</div></h3>
+
+        <div class="leaderboard">
+            <table>
+                <tr>
+                    <th>Player</th>
+                    <th>Date</th>
+                    <th>Team Name</th>
+                    <th>Result</th>
+                    <th class="align-right hidden">Money</th>
+                    <th class="align-right hidden">Inv. Value</th>
+                    <th class="align-right">Score</th>
+                    <th class="align-right">Turns</th>
+                    <th>Team</th>
+                    {% if page.board_type != "roguelocke" %}<th>Starting Items</th>{% endif %}
+                    <th>Version</th>
+                    <th>Seed</th>
+                    <th>Replay</th>
+                    <!--th>Notes</th-->
+                </tr>
+                {% for replay in site.data[outdated] %}
+                    <tr>
+                        <td>{{replay["Player"]}}</td>
+                        <td>{{replay["Date"]}}</td>
+                        <td>{{replay["Team Name"]}}</td>
+                        <td>{{replay["Result"]}} on {% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</td>
+                        <td class="align-right hidden">{{replay["Money"]}}</td>
+                        <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
+                        <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
+                        <td class="align-right">{{replay["Turns"]}}</td>
+                        <td>
+                            {% assign members = replay["Team"] | split: "," %}
+                            {% for member in members %}
+                                {% assign species = member | split: "/" | last %}
+                                {% assign nickname = member | split: "/" | first %}<figure>
+                                    <img src="/images/portraits/{{species | slugify}}.png" alt="{{species}}" title="{{species}}" class="portrait">
+                                    <figcaption>{{nickname}}</figcaption>
+                                </figure>{% endfor %}
+                        </td>
+                        {% if page.board_type != "roguelocke" %}<td>{% assign items = replay["Starting Items"] | split: "," %}
+                            {% for item in items %}{{item}}<br>{% endfor %}
+                        </td>{% endif %}
+                        <td>{{replay["Version"]}}</td>
+                        <td class="monospace">{{replay["Seed"]}}</td>
+                        <td>
+                            {% if replay["File"] %}{{site.baseurl}}<a href="/replays/{{page.title | slugify}}/{{replay["File"]}}" target="_blank">{{replay["File"]}}</a>{% else %}{{replay["File"]}}{% endif %}
+                            {% if replay["Video URL"] %}<br><a href="{{replay["Video URL"]}}" class="video-link">Video</a>{% endif %}
+                        </td>
+                        <!--td>{{replay["Notes"]}}</td-->
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+    {% endif %}
+</body>

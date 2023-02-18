@@ -117,3 +117,13 @@ nav {
 		border-bottom-right-radius: 0.25em;
     }
 }
+
+.flex-container {
+	display: flex;
+}
+
+@media (max-width: 767px) {
+	.hidden-mobile {
+	  display: none;
+	}
+}

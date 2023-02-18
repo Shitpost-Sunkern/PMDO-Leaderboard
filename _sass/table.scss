@@ -21,6 +21,11 @@ table {
         border-bottom-right-radius: 0.75em;
     }
 
+	.header-column {
+		position: sticky;
+		left: 0;
+	}
+
 	th {
 		height: 2em;
 	}
@@ -31,10 +36,15 @@ div.leaderboard {
 	
 	padding: 0.25em;
 	margin: 0 8px 8px;
+	overflow-x: scroll;
 }
 
 .gender-unlock {
 	font-weight: bold;
 	color: blueviolet;
 	cursor: help;
+}
+
+.item-list {
+	padding-left: 1.5em;
 }

@@ -9,7 +9,7 @@
 <div class="dropdown">
     <select onchange="change_page(this.value)">
         <optgroup label="Site">
-            <option value="/">About</option>
+            <option value="{{site.baseurl}}/">About</option>
         </optgroup>
 
         {% assign groups_sorted = site.groups | sort: "sort-order" %}
@@ -20,7 +20,7 @@
             {% if count > 0 %}
                 <optgroup label="{{group.title}}">
                     {% for board in boards %}
-                        <option value="{{board.url}}" {% if board.title == page.title %}selected{% endif %}>{{board.title}}</option>
+                        <option value="{{site.baseurl}}{{board.url}}" {% if board.title == page.title %}selected{% endif %}>{{board.title}}</option>
                     {% endfor %}
                 </optgroup>
             {% endif %}

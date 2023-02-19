@@ -29,6 +29,11 @@ table {
 	th {
 		height: 2em;
 	}
+
+	h5 {
+		font-size: inherit;
+		margin-bottom: 0.5em;
+	}
 }
 
 div.leaderboard {
@@ -47,4 +52,5 @@ div.leaderboard {
 
 .item-list {
 	padding-left: 1.5em;
+	margin-bottom: 0;
 }

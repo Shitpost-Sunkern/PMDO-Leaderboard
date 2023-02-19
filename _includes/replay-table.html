@@ -11,7 +11,7 @@
             {% if include.is_leaderboard %}<th class="align-right">#</th>{% endif %}
             <th>Player</th>
             <th>Date</th>
-            <th>Team Name</th>
+            <!--th>Team Name</th-->
             <th>Result</th>
             <th class="align-right hidden">Money</th>
             <th class="align-right hidden">Inv. Value</th>
@@ -34,14 +34,15 @@
                 {% if include.is_leaderboard %}{% assign count = count | plus: 1 %}<td class="align-right">{{count}}</td>{% endif %}
                 <td>{{replay["Player"]}}</td>
                 <td>{{replay["Date"]}}</td>
-                <td>{{replay["Team Name"]}}</td>
+                <!--td>{{replay["Team Name"]}}</td-->
                 <td>{{replay["Result"]}} on {% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</td>
                 <td class="align-right hidden">{{replay["Money"]}}</td>
                 <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
                 <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
                 <td class="align-right">{{replay["Turns"]}}</td>
-                <td class="align-right">{{replay["Time"]}}</td>
+                <td class="align-right">{% if replay["Time"] == "" or replay["Time"] == nil %}-:--:--{% else %}{{replay["Time"]}}{% endif %}</td>
                 <td>
+                    <h5>{{replay["Team Name"]}}</h5>
                     <div class="flex-container">
                         {% assign members = replay["Team"] | split: "," %}
                         {%- for member in members -%}

@@ -180,6 +180,66 @@ body.theme-secret-garden {
 	}
 }
 
+body.theme-wish-cave {
+	--text-color: black;
+	--fg-color-light1: #fee9e1;
+	--fg-color-light2: #f7de94;
+	--fg-color-dark1: #de9c73;
+	--fg-color-dark2: #c67b42;
+	--fg-color-dark3: rgba(8, 49, 12, 0.75);
+	--bg-color-1: #188c73;
+	--bg-color-2: #003908;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
 body.theme-joyous-tower {
 	--text-color: black;
 	--fg-color-light1: #f8fefe;
@@ -189,6 +249,308 @@ body.theme-joyous-tower {
 	--fg-color-dark3: rgba(37, 45, 45, 0.5);
 	--bg-color-1: #bd738c;
 	--bg-color-2: #9c4a4a;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-purity-forest {
+	--text-color: black;
+	--fg-color-light1: #fcf0d1;
+	--fg-color-light2: #f7de8c;
+	--fg-color-dark1: #dea573;
+	--fg-color-dark2: #a59463;
+	--fg-color-dark3: rgba(82, 132, 49, 0.75);
+	--bg-color-1: #a5de52;
+	--bg-color-2: #7bc652;
+	--bg-color-3: #6bad52;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2), var(--bg-color-3),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-zero-isle-east {
+	--text-color: black;
+	--fg-color-light1: #ffffff;
+	--fg-color-light2: #ddeec4;
+	--fg-color-dark1: #c69c84;
+	--fg-color-dark2: #8c5252;
+	--fg-color-dark3: rgba(0, 24, 41, 0.75);
+	--bg-color-1: #18395a;
+	--bg-color-2: #001829;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-zero-isle-west {
+	--text-color: black;
+	--fg-color-light1: #fffff9;
+	--fg-color-light2: #e7bdad;
+	--fg-color-dark1: #947373;
+	--fg-color-dark2: #4a5252;
+	--fg-color-dark3: rgba(33, 66, 41, 0.75);
+	--bg-color-1: #526b8c;
+	--bg-color-2: #29394a;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-zero-isle-south {
+	--text-color: black;
+	--fg-color-light1: #ced6f0;
+	--fg-color-light2: #ced6de;
+	--fg-color-dark1: #949cbd;
+	--fg-color-dark2: #52636b;
+	--fg-color-dark3: rgba(57, 74, 82, 0.5);
+	--bg-color-1: #a5a57b;
+	--bg-color-2: #848c73;
+	--bg-color-3: #10426b;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+
+	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2), var(--bg-color-3),);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+body.theme-destiny-tower {
+	--text-color: black;
+	--fg-color-light1: #efebe3;
+	--fg-color-light2: #f9e8a4;
+	--fg-color-dark1: #c4c7ce;
+	--fg-color-dark2: #9fa5b3;
+	--fg-color-dark3: rgba(32, 29, 36, 0.5);
+	--bg-color-1: #343239;
+	--bg-color-2: #003;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
 

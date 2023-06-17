@@ -1,17 +1,6 @@
 // Solid Themes
 
-body.theme-guildmaster {
-	--text-color: black;
-	--fg-color-light1: #fffff9;
-	--fg-color-light2: rgb(253, 232, 189);
-	--fg-color-dark1: #960;
-	--fg-color-dark2: #630;
-	--fg-color-dark3: rgba(32, 16, 0, 0.5);
-	--bg-color-1: rgb(158, 221, 250);
-	--bg-color-2: rgb(110, 167, 252);
-	--link-color: rgb(0, 93, 233);
-	--link-color-active: rgb(235, 200, 0);
-
+body.theme-solid {
 	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
 	height: 100%;
 	background-repeat: no-repeat;
@@ -58,6 +47,19 @@ body.theme-guildmaster {
 			text-decoration: none;
 		}
 	}
+}
+
+body.theme-guildmaster {
+	--text-color: black;
+	--fg-color-light1: #fffff9;
+	--fg-color-light2: rgb(253, 232, 189);
+	--fg-color-dark1: #960;
+	--fg-color-dark2: #630;
+	--fg-color-dark3: rgba(32, 16, 0, 0.5);
+	--bg-color-1: rgb(158, 221, 250);
+	--bg-color-2: rgb(110, 167, 252);
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);	
 }
 
 body.theme-sickly-hollow {
@@ -71,53 +73,6 @@ body.theme-sickly-hollow {
 	--bg-color-2: rgb(82, 90, 41);
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-secret-garden {
@@ -131,53 +86,6 @@ body.theme-secret-garden {
 	--bg-color-2: rgb(110, 219, 252);
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-wish-cave {
@@ -191,53 +99,6 @@ body.theme-wish-cave {
 	--bg-color-2: #003908;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-joyous-tower {
@@ -251,53 +112,6 @@ body.theme-joyous-tower {
 	--bg-color-2: #9c4a4a;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-purity-forest {
@@ -312,53 +126,6 @@ body.theme-purity-forest {
 	--bg-color-3: #6bad52;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2), var(--bg-color-3),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-zero-isle-east {
@@ -372,53 +139,6 @@ body.theme-zero-isle-east {
 	--bg-color-2: #001829;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-zero-isle-west {
@@ -432,53 +152,6 @@ body.theme-zero-isle-west {
 	--bg-color-2: #29394a;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-zero-isle-south {
@@ -493,53 +166,6 @@ body.theme-zero-isle-south {
 	--bg-color-3: #10426b;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2), var(--bg-color-3),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 body.theme-destiny-tower {
@@ -553,70 +179,11 @@ body.theme-destiny-tower {
 	--bg-color-2: #003;
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
-
-	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	color: var(--text-color);
-
-	td, nav a, .inner, select {
-		background-color: var(--fg-color-light1);
-	}
-
-	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
-		background-color: var(--fg-color-light2);
-	}
-
-	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
-		background-color: var(--fg-color-dark1);
-		border-bottom: 2px solid var(--fg-color-dark2);
-		box-shadow: 2px 2px 4px var(--fg-color-dark3);
-	}
-
-	.portrait {
-		border-color: var(--fg-color-dark2);
-	}
-
-	a {
-		text-decoration: none;
-	
-		&:link {
-			color: var(--link-color);
-		}
-		&:hover {
-			text-decoration: underline;
-		}
-		&:active {
-			color: var(--link-active-color);
-		}
-	}
-
-	nav a {
-		&:link {
-			color: var(--text-color);
-		}
-		&:hover {
-			text-decoration: none;
-		}
-	}
 }
 
 // Gradient Themes
 
-body.theme-rescue-team {
-	--text-color: black;
-	--fg-color-light1: rgba(255, 255, 255, 0.9);
-	--fg-color-light2: rgba(255, 255, 255, 0.5);
-	--fg-color-dark1-top: #ff302b;
-	--fg-color-dark1-bottom: #008bde;
-	--fg-color-dark2: #0a6aab;
-	--fg-color-dark3: rgba(4, 25, 44, 0.5);
-	--bg-color-1: #1078e8;
-	--bg-color-2: #60c0e8;
-	--link-color: rgb(0, 93, 233);
-	--link-color-active: rgb(235, 200, 0);
-
+body.theme-gradient {
 	background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2),);
 	height: 100%;
 	background-repeat: no-repeat;
@@ -665,6 +232,20 @@ body.theme-rescue-team {
 			text-decoration: none;
 		}
 	}
+}
+
+body.theme-rescue-team {
+	--text-color: black;
+	--fg-color-light1: rgba(255, 255, 255, 0.9);
+	--fg-color-light2: rgba(255, 255, 255, 0.5);
+	--fg-color-dark1-top: #ff302b;
+	--fg-color-dark1-bottom: #008bde;
+	--fg-color-dark2: #0a6aab;
+	--fg-color-dark3: rgba(4, 25, 44, 0.5);
+	--bg-color-1: #1078e8;
+	--bg-color-2: #60c0e8;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
 }
 
 // Unused Themes

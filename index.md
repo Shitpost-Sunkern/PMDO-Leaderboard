@@ -4,7 +4,7 @@
 
 layout: info
 title: About
-theme: theme-guildmaster
+theme: theme-guildmaster theme-solid
 
 ---
 

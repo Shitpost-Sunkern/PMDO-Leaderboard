@@ -127,3 +127,14 @@ nav {
 	  display: none;
 	}
 }
+
+#modal-info {
+	font-size: 200%;
+	padding: .25em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+h2, #modal-info {
+	display: inline-block;
+}

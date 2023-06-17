@@ -47,6 +47,16 @@ body.theme-solid {
 			text-decoration: none;
 		}
 	}
+
+	#modal-container {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+	
+	#modal-inner {
+		background-color: var(--fg-color-light1);
+	}
 }
 
 body.theme-guildmaster {

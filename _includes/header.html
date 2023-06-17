@@ -28,4 +28,18 @@
     </select>
 </div>
 
-<h2 title="{{page.secret}}"><div>{{page.title}}</div></h2>
+
+
+<h2 title="{{page.secret}}"><div>{{page.title}}</div></h2> 
+{% if page.info %}<span id="modal-info">ⓘ</span>{% endif %}
+
+
+
+
+<script>
+    document.getElementById('modal-info').onclick = function() {
+      Modal.open({
+        content: "<h4>{{page.title}} Info</h4><ul>{% for bullet in page.info %}<li>{{bullet}}</li>{% endfor %}</ul>"
+      });
+    }
+</script>

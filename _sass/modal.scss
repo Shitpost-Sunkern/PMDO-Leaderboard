@@ -1,0 +1,27 @@
+#modal-container {
+	border: unset;
+	padding: 0.25em;
+	border-radius: 0.75em;
+
+	font: unset;
+
+	left: 25%;
+	top: 12.5%;
+	width: 32.5%;
+
+	h4 {
+		font-family: "Merriweather Sans";
+		margin-top: 0;
+		font-size: 14pt;
+	}
+}
+
+#modal-inner {
+	margin: 0.15em;
+	padding: 0.125em 0.25em;
+	border-radius: 0.5em;
+}
+
+#modal-close {
+	background: url('../images/jsmodal/modal-close.png') no-repeat center center;
+}

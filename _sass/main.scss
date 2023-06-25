@@ -138,3 +138,9 @@ nav {
 h2, #modal-info {
 	display: inline-block;
 }
+
+@media (max-width: 359px) {
+	h2.long-title div {
+		font-size: 90%;
+	}
+}

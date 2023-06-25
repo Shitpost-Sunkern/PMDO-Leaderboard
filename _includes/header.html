@@ -30,7 +30,7 @@
 
 
 
-<h2 title="{{page.secret}}"><div>{{page.title}}</div></h2> 
+<h2 title="{{page.secret}}" {% if page.long-title %}class="long-title"{% endif %}><div>{{page.title}}</div></h2> 
 {% if page.info %}<span id="modal-info">ⓘ</span>{% endif %}
 
 

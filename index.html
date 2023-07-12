@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Leaderboards for Pokémon Mystery Dungeon: Origins, a Pokémon Mystery Dungeon fangame.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PMDO Leaderboards: About</title>
+
+    <link rel="icon" type="image/png" href="/images/favicon/PMDO_favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,350;0,700;1,350;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+
+
+    <link href="/styles/jsmodal-dark.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/jsmodal-1.0d-modified.min.js"></script>
+</head>
+
+<body class="theme-guildmaster theme-solid">
+
+    <h1><div>PMDO Leaderboards</div></h1>
+
+<script>
+    function change_page(page) {
+        window.location.href = page;
+    }
+</script>
+
+<div class="dropdown">
+    <select onchange="change_page(this.value)">
+        <optgroup label="Site">
+            <option value="/">About</option>
+        </optgroup>
+
+        
+        
+            
+            
+            
+            
+                <optgroup label="PMDO">
+                    
+                        <option value="/leaderboards/PMDO/guildmaster-trail-story.html" >Guildmaster Trail - Story</option>
+                    
+                        <option value="/leaderboards/PMDO/guildmaster-trail-roguelocke.html" >Guildmaster Trail - Roguelocke</option>
+                    
+                        <option value="/leaderboards/PMDO/sickly-hollow.html" >Sickly Hollow</option>
+                    
+                        <option value="/leaderboards/PMDO/secret-garden-story.html" >Secret Garden - Story</option>
+                    
+                        <option value="/leaderboards/PMDO/secret-garden-roguelocke.html" >Secret Garden - Roguelocke</option>
+                    
+                </optgroup>
+            
+        
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        
+    </select>
+</div>
+
+
+
+<h2 title="" ><div>About</div></h2> 
+
+
+
+
+
+<script>
+    document.getElementById('modal-info').onclick = function() {
+      Modal.open({
+        content: "<h4>About Info</h4><ul></ul>"
+      });
+    }
+</script>
+
+    <div class="leaderboard">
+        <div class="inner"><p>Post your replays in the #playthroughs-share channel in the PMDO Discord to get put up on the leaderboard! It’s OK if you didn’t clear the dungeon — if you get a personal best, that’s good too.</p>
+
+<p>Please feel free to contact us about any other concerns (e.g. name changes, removing your records)</p>
+
+<h4 id="ranking">Ranking</h4>
+
+<p>Replays are ranked by highest floor reached, then the best result, then highest score, then fewest turns. To clarify what constitutes a better result: clears will be ordered above escapes, escapes above defeats, and defeats above giving up.</p>
+
+<p>Score is calculated as the sum of your total money and inventory values, minus any money you entered the dungeon with. The subtraction of starting money is to prevent the ability to manipulate one’s score by entering a dungeon carrying thousands of Poké to get a higher placement for no real effort.</p>
+
+<p>The following items are excluded from score calculation:</p>
+
+<ul>
+  <li>Gracidea</li>
+</ul>
+
+<h4 id="other-details-about-submissions">Other details about submissions</h4>
+
+<p>The list of team members shown on the scoreboard is subjective based on percieved contribution to the run. If you feel a different member of your team deserves a spot there instead, send us a message.</p>
+
+<p>You can also share any interesting runs you have that don’t necessarily beat your best score. We’ll group them in the “Outdated Runs” category.</p>
+
+<h4 id="categories">Categories</h4>
+
+<p>Presently, we’re tracking two categories for runs: Story (your main save) and Roguelocke. Additionally, we’re only tracking records for level reset dungeons. Some level reset dungeons don’t have Roguelocke available, in which case they will only have one category.</p>
+
+<p>If you don’t see a tab for a particular dungeon + category, it’s because no one’s submitted a replay for it yet. Quick, do a run and send us the replay! You’ll get first place by default!</p>
+
+<p>If a particular seed becomes popular for seeded runs, or if a dungeon in a quest becomes popular, we might add a category for that too.</p>
+
+<h4 id="other-rules">Other rules</h4>
+
+<p>Runs must play back without desync on either a vanilla installation of PMDO (of the correct version) or an installation with only Gender Unlock enabled to be accepted.</p>
+
+<p>All Pokémon used must be of a species obtainable on a vanilla installation of PMDO.</p>
+</div>
+    </div>
+</body>

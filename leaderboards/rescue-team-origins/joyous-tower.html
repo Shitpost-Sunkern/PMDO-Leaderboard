@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Leaderboards for Pokémon Mystery Dungeon: Origins, a Pokémon Mystery Dungeon fangame.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PMDO Leaderboards: Joyous Tower</title>
+
+    <link rel="icon" type="image/png" href="/images/favicon/PMDO_favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,350;0,700;1,350;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+
+
+    <link href="/styles/jsmodal-dark.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/jsmodal-1.0d-modified.min.js"></script>
+</head>
+
+<body class="theme-joyous-tower theme-solid">
+
+    <h1><div>PMDO Leaderboards</div></h1>
+
+<script>
+    function change_page(page) {
+        window.location.href = page;
+    }
+</script>
+
+<div class="dropdown">
+    <select onchange="change_page(this.value)">
+        <optgroup label="Site">
+            <option value="/">About</option>
+        </optgroup>
+
+        
+        
+            
+            
+            
+            
+                <optgroup label="PMDO">
+                    
+                        <option value="/leaderboards/PMDO/guildmaster-trail-story.html" >Guildmaster Trail - Story</option>
+                    
+                        <option value="/leaderboards/PMDO/guildmaster-trail-roguelocke.html" >Guildmaster Trail - Roguelocke</option>
+                    
+                        <option value="/leaderboards/PMDO/sickly-hollow.html" >Sickly Hollow</option>
+                    
+                        <option value="/leaderboards/PMDO/secret-garden-story.html" >Secret Garden - Story</option>
+                    
+                        <option value="/leaderboards/PMDO/secret-garden-roguelocke.html" >Secret Garden - Roguelocke</option>
+                    
+                </optgroup>
+            
+        
+            
+            
+            
+            
+        
+            
+            
+            
+            
+        
+    </select>
+</div>
+
+
+
+<h2 title="Every new friend I make puts a smile on my face." ><div>Joyous Tower</div></h2> 
+
+
+
+
+
+<script>
+    document.getElementById('modal-info').onclick = function() {
+      Modal.open({
+        content: "<h4>Joyous Tower Info</h4><ul></ul>"
+      });
+    }
+</script>
+
+    
+    
+
+    
+
+    
+
+    
+
+
+
+<div class="leaderboard">
+    <table>
+        <tr>
+            <th class="align-right">#</th>
+            <th>Player</th>
+            <th>Date</th>
+            <!--th>Team Name</th-->
+            <th>Result</th>
+            <th class="align-right hidden">Money</th>
+            <th class="align-right hidden">Inv. Value</th>
+            <th class="align-right">Score</th>
+            <th class="align-right">Turns</th>
+            <th class="align-right">Time</th>
+            <th>Team</th>
+            <th>Starting Items</th>
+            <th>Version</th>
+            <th>Seed</th>
+            <th>Replay</th>
+            <!--th>Notes</th-->
+        </tr>
+        
+        
+        
+    </table>
+</div>
+    
+    
+    
+
+</body>

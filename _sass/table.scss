@@ -44,10 +44,22 @@ div.leaderboard {
 	overflow-x: scroll;
 }
 
+span.result {
+	font-weight: bold;
+}
+
+span.floor::before {
+	content: "➤ ";
+}
+
 .gender-unlock {
 	font-weight: bold;
 	color: blueviolet;
 	cursor: help;
+}
+
+.player-cell, .item-cell, .result-cell, .team-cell {
+	min-width: max-content;
 }
 
 .item-list {

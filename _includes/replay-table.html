@@ -32,16 +32,16 @@
         {% for replay in site.data[include.board_name] %}
             <tr>
                 {% if include.is_leaderboard %}{% assign count = count | plus: 1 %}<td class="align-right">{{count}}</td>{% endif %}
-                <td>{{replay["Player"]}}</td>
+                <td class="player-cell">{{replay["Player"]}}</td>
                 <td>{{replay["Date"]}}</td>
                 <!--td>{{replay["Team Name"]}}</td-->
-                <td>{{replay["Result"]}} on {% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</td>
+                <td class="result-cell"><span class="result">{{replay["Result"]}}</span><br><span class="floor">{% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</span></td>
                 <td class="align-right hidden">{{replay["Money"]}}</td>
                 <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
                 <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
                 <td class="align-right">{{replay["Turns"]}}</td>
                 <td class="align-right">{% if replay["Time"] == "" or replay["Time"] == nil %}-:--:--{% else %}{{replay["Time"]}}{% endif %}</td>
-                <td>
+                <td class="team-cell">
                     <h5>{{replay["Team Name"]}}</h5>
                     <div class="flex-container">
                         {% assign members = replay["Team"] | split: "," %}
@@ -53,7 +53,7 @@
                             </figure>{%- endfor -%}
                     </div>
                 </td>
-                {% unless include.is_roguelocke %}<td>{% assign items = replay["Starting Items"] | split: "," %}
+                {% unless include.is_roguelocke %}<td class="item-cell">{% assign items = replay["Starting Items"] | split: "," %}
                     <ul class="item-list">
                         {% for item in items %}<li>{{item}}</li>{% endfor %}
                     </ul>

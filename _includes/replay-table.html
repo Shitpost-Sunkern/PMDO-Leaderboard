@@ -35,7 +35,7 @@
                 <td class="player-cell">{{replay["Player"]}}</td>
                 <td>{{replay["Date"]}}</td>
                 <!--td>{{replay["Team Name"]}}</td-->
-                <td class="result-cell"><span class="result">{{replay["Result"]}}</span><br><span class="floor">{% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</span></td>
+                <td class="result-cell">{% if replay['Result'] == 'Cleared' %}<span class="result-cleared">{% else %}<span class="result">{% endif %}{{replay["Result"]}}</span><br><span class="floor">{% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</span></td>
                 <td class="align-right hidden">{{replay["Money"]}}</td>
                 <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
                 <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>

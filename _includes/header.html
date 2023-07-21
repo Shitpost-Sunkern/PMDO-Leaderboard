@@ -34,12 +34,13 @@
 {% if page.info %}<span id="modal-info">ⓘ</span>{% endif %}
 
 
-
+{% capture modal_content %}{% include modal.html %}{% endcapture %}
+{% assign modal_content = modal_content | strip_newlines %}
 
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>{{page.title}} Info</h4><ul>{% for bullet in page.info %}<li>{{bullet}}</li>{% endfor %}</ul>"
+        content: "{{modal_content}}",
       });
     }
 </script>

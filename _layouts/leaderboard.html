@@ -13,9 +13,9 @@
 
     {% assign board_name = page.title | slugify %}
 
-    {% assign board_name_leaderbard = board_name | append: "-leaderboard" %}
+    {% assign board_name_leaderboard = board_name | append: "-leaderboard" %}
 
-    {% include replay-table.html is_roguelocke=is_roguelocke is_leaderboard=true board_name=board_name_leaderbard %}
+    {% include replay-table.html is_roguelocke=is_roguelocke is_leaderboard=true board_name=board_name_leaderboard %}
     
     {% assign board_name_outdated = board_name | append: "-outdated" %}
     {% if site.data[board_name_outdated] %}

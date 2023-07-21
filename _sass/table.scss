@@ -1,4 +1,4 @@
-table {
+table.replay-table {
 
 	width: 100%;
 
@@ -52,6 +52,10 @@ span.floor::before {
 	content: "➤ ";
 }
 
+span.floor {
+	cursor: help;
+}
+
 .gender-unlock {
 	font-weight: bold;
 	color: blueviolet;
@@ -66,4 +70,16 @@ span.floor::before {
 	padding-left: 1.5em;
 	margin-top: .25em;
 	margin-bottom: .25em;
+}
+
+.mod-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: .25em;
+	margin-bottom: .25em;
+
+	.mod-name {
+		font-weight: bold;
+		margin-right: 0.25em;
+	}
 }

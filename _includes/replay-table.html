@@ -1,12 +1,5 @@
-{% for replay in site.data[include.board_name] %}
-
-
-{% endfor %}
-
-
-
 <div class="leaderboard">
-    <table>
+    <table class="replay-table">
         <tr>
             {% if include.is_leaderboard %}<th class="align-right">#</th>{% endif %}
             <th>Player</th>
@@ -35,7 +28,16 @@
                 <td class="player-cell">{{replay["Player"]}}</td>
                 <td>{{replay["Date"]}}</td>
                 <!--td>{{replay["Team Name"]}}</td-->
-                <td class="result-cell">{% if replay['Result'] == 'Cleared' %}<span class="result-cleared">{% else %}<span class="result">{% endif %}{{replay["Result"]}}</span><br><span class="floor">{% if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F</span></td>
+                <td class="result-cell">
+                    {%- if replay['Result'] == 'Cleared' %}<span class="result-cleared">{% else %}<span class="result">{% endif %}{{replay["Result"]}}</span><br>
+                    <span class="floor" title="Depth: {{replay['Depth']}} pts">
+                        {%- if page.multi_segment -%}
+                            {{replay["Segment"]}} {% if page.is_basement[replay["Segment"]] %}{{"B"}}{% endif %}{{replay["Floor"]}}F
+                        {%- else -%}
+                            {%- if page.is_basement %}{{"B"}}{% endif %}{{replay["Floor"]}}F
+                        {%- endif -%}
+                    </span>
+                </td>
                 <td class="align-right hidden">{{replay["Money"]}}</td>
                 <td class="align-right hidden">{{replay["Inventory Value"]}}</td>
                 <td class="align-right">{{replay["Money"] | plus: replay["Inventory Value"] | minus: replay["Starting Money"]}}</td>
@@ -59,7 +61,20 @@
                     </ul>
                 </td>{% endunless %}
                 <td>
-                    {{ replay["Version"] }}{% if replay["Gender Unlock"] %}<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>{% endif %}
+                    {% if page.is_mod %}
+                        <ul class="mod-list">
+                            <li><span class="mod-name">PMDO</span> {{ replay["Version"] }}{% if replay["Gender Unlock"] %}<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>{% endif %}</li>
+                            {% assign mods = replay["Mod List"] | split: "," %}
+                            {% for mod in mods %}
+                                {% assign mod_version = mod | split: " " | last %}
+                                {% assign mod_name = mod | remove: mod_version | strip %}
+                                <li><span class="mod-name">{{mod_name}}</span> {{mod_version}}</li>
+                            {% endfor %}
+                        </dl>
+                    {% else %}
+                        {{ replay["Version"] }}{% if replay["Gender Unlock"] %}<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>{% endif %}
+                    {% endif %}
+
                 </td>
                 <td class="monospace">{{replay["Seed"]}}</td>
                 <td>

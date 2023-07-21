@@ -14,6 +14,13 @@
 		margin-top: 0;
 		font-size: 14pt;
 	}
+
+	h5 {
+		font-family: "Merriweather Sans";
+		margin-top: 0;
+		margin-bottom: .5em;
+		font-size: 12pt;
+	}
 }
 
 #modal-inner {
@@ -24,4 +31,32 @@
 
 #modal-close {
 	background: url('../images/jsmodal/modal-close.png') no-repeat center center;
+}
+
+#modal-content {
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+
+table.depth-rubric {
+
+	border-spacing: 0;
+
+	td, th { 
+		padding: 0.2em 0.25em;
+		min-width: fit-content;
+	}
+
+	tr:first-of-type th:first-child, tr:first-of-type td:first-child {
+        border-top-left-radius: 0.75em;
+    }
+    tr:first-of-type th:last-child, tr:first-of-type td:last-child {
+        border-top-right-radius: 0.75em;
+    }
+	tr:last-of-type th:first-child, tr:last-of-type td:first-child {
+        border-bottom-left-radius: 0.75em;
+    }
+    tr:last-of-type th:last-child, tr:last-of-type td:last-child {
+        border-bottom-right-radius: 0.75em;
+    }
 }

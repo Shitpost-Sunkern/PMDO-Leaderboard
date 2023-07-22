@@ -66,6 +66,11 @@
             
             
         
+            
+            
+            
+            
+        
     </select>
 </div>
 
@@ -77,10 +82,11 @@
 
 
 
+
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>Guildmaster Trail - Roguelocke Info</h4><ul><li>Objective: In Roguelocke mode, clear Guildmaster Trail on 30F.</li><li>Set level: Lv.5</li><li>Max party size: 4. Only one Pokémon may be brought into the dungeon.</li><li>This dungeon is unlocked from the very beginning.</li></ul>"
+        content: "<h4>Guildmaster Trail - Roguelocke Info</h4><ul>            <li>Objective: In Roguelocke mode, clear Guildmaster Trail on 30F.</li>            <li>Set level: Lv.5</li>            <li>Max party size: 4. Only one Pokémon may be brought into the dungeon.</li>            <li>This dungeon is unlocked from the very beginning.</li>    </ul><h5>Depth scoring</h5><table class='depth-rubric'>            <tr><th>Floor</th><th>Depth points</th></tr>                    <tr>                <td>1F</td>                <td>1 pts</td>            </tr>                    <tr>                <td>2F</td>                <td>2 pts</td>            </tr>                    <tr>                <td>3F</td>                <td>3 pts</td>            </tr>                    <tr>                <td>4F</td>                <td>4 pts</td>            </tr>                    <tr>                <td>5F</td>                <td>5 pts</td>            </tr>                    <tr>                <td>6F</td>                <td>6 pts</td>            </tr>                    <tr>                <td>7F</td>                <td>7 pts</td>            </tr>                    <tr>                <td>8F</td>                <td>8 pts</td>            </tr>                    <tr>                <td>9F</td>                <td>9 pts</td>            </tr>                    <tr>                <td>10F</td>                <td>10 pts</td>            </tr>                    <tr>                <td>11F</td>                <td>11 pts</td>            </tr>                    <tr>                <td>12F</td>                <td>12 pts</td>            </tr>                    <tr>                <td>13F</td>                <td>13 pts</td>            </tr>                    <tr>                <td>14F</td>                <td>14 pts</td>            </tr>                    <tr>                <td>15F</td>                <td>15 pts</td>            </tr>                    <tr>                <td>16F</td>                <td>16 pts</td>            </tr>                    <tr>                <td>17F</td>                <td>17 pts</td>            </tr>                    <tr>                <td>18F</td>                <td>18 pts</td>            </tr>                    <tr>                <td>19F</td>                <td>19 pts</td>            </tr>                    <tr>                <td>20F</td>                <td>20 pts</td>            </tr>                    <tr>                <td>21F</td>                <td>21 pts</td>            </tr>                    <tr>                <td>22F</td>                <td>22 pts</td>            </tr>                    <tr>                <td>23F</td>                <td>23 pts</td>            </tr>                    <tr>                <td>24F</td>                <td>24 pts</td>            </tr>                    <tr>                <td>25F</td>                <td>25 pts</td>            </tr>                    <tr>                <td>26F</td>                <td>26 pts</td>            </tr>                    <tr>                <td>27F</td>                <td>27 pts</td>            </tr>                    <tr>                <td>28F</td>                <td>28 pts</td>            </tr>                    <tr>                <td>29F</td>                <td>29 pts</td>            </tr>                    <tr>                <td>30F</td>                <td>30 pts</td>            </tr>            </table>",
       });
     }
 </script>
@@ -92,12 +98,8 @@
 
     
 
-    
-
-
-
-<div class="leaderboard">
-    <table>
+    <div class="leaderboard">
+    <table class="replay-table">
         <tr>
             <th class="align-right">#</th>
             <th>Player</th>
@@ -124,7 +126,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2023-03-04</td>
                 <!--td>Team Creation</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">48014</td>
                 <td class="align-right hidden">13650</td>
                 <td class="align-right">61664</td>
@@ -149,7 +153,10 @@
                 </td>
                 
                 <td>
-                    v0.6.9
+                    
+                        v0.6.9
+                    
+
                 </td>
                 <td class="monospace">EF666C0D19AE8A8E</td>
                 <td>
@@ -164,7 +171,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2022-12-08</td>
                 <!--td>PipInstall</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">39953</td>
                 <td class="align-right hidden">1481</td>
                 <td class="align-right">41434</td>
@@ -189,7 +198,10 @@
                 </td>
                 
                 <td>
-                    v0.6.8
+                    
+                        v0.6.8
+                    
+
                 </td>
                 <td class="monospace">7AAA028BA74DDE1B</td>
                 <td>
@@ -204,7 +216,9 @@
                 <td class="player-cell">Dragonfabri</td>
                 <td>2023-02-05</td>
                 <!--td>Fabrighoard</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">29958</td>
                 <td class="align-right hidden">4615</td>
                 <td class="align-right">34573</td>
@@ -229,7 +243,10 @@
                 </td>
                 
                 <td>
-                    v0.6.9
+                    
+                        v0.6.9
+                    
+
                 </td>
                 <td class="monospace">D0DFE3CB0AD76A73</td>
                 <td>
@@ -244,7 +261,9 @@
                 <td class="player-cell">Shitpost Sunkern</td>
                 <td>2020-10-23</td>
                 <!--td>Saucy Squad</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">9628</td>
                 <td class="align-right hidden">9427</td>
                 <td class="align-right">19055</td>
@@ -272,7 +291,10 @@
                 </td>
                 
                 <td>
-                    v0.2.3
+                    
+                        v0.2.3
+                    
+
                 </td>
                 <td class="monospace">7EE48B9068A5F79C</td>
                 <td>
@@ -287,7 +309,9 @@
                 <td class="player-cell">justjude97</td>
                 <td>2022-03-20</td>
                 <!--td>misplay</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">10775</td>
                 <td class="align-right hidden">2205</td>
                 <td class="align-right">12980</td>
@@ -312,7 +336,10 @@
                 </td>
                 
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">D205F5DCC5EE6A1F</td>
                 <td>
@@ -327,7 +354,9 @@
                 <td class="player-cell">CobaltGray</td>
                 <td>2022-11-09</td>
                 <!--td>Gensokyo Drifters</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">7908</td>
                 <td class="align-right hidden">5002</td>
                 <td class="align-right">12910</td>
@@ -352,7 +381,10 @@
                 </td>
                 
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">10BC75076D9F8126</td>
                 <td>
@@ -367,7 +399,9 @@
                 <td class="player-cell">2tousent</td>
                 <td>2022-03-27</td>
                 <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">6466</td>
                 <td class="align-right hidden">2085</td>
                 <td class="align-right">8551</td>
@@ -392,7 +426,10 @@
                 </td>
                 
                 <td>
-                    v0.5.9
+                    
+                        v0.5.9
+                    
+
                 </td>
                 <td class="monospace">8F730822BDA04D3E</td>
                 <td>
@@ -407,7 +444,9 @@
                 <td class="player-cell">f UwU</td>
                 <td>2022-05-16</td>
                 <!--td>Time's End</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">24F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 24 pts">24F</span>
+                </td>
                 <td class="align-right hidden">6178</td>
                 <td class="align-right hidden">4620</td>
                 <td class="align-right">10798</td>
@@ -426,7 +465,10 @@
                 </td>
                 
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">527A873B98D29420</td>
                 <td>
@@ -441,7 +483,9 @@
                 <td class="player-cell">The kitchen sunk</td>
                 <td>2023-02-17</td>
                 <!--td>The Noble Victory</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">21F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 21 pts">21F</span>
+                </td>
                 <td class="align-right hidden">7574</td>
                 <td class="align-right hidden">5875</td>
                 <td class="align-right">13449</td>
@@ -466,7 +510,10 @@
                 </td>
                 
                 <td>
-                    v0.6.9<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
+                    
+                        v0.6.9<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
+                    
+
                 </td>
                 <td class="monospace">48E0479601F49FCF</td>
                 <td>
@@ -481,7 +528,9 @@
                 <td class="player-cell">Obscured</td>
                 <td>2022-07-06</td>
                 <!--td>Team Outlaw</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">18F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 18 pts">18F</span>
+                </td>
                 <td class="align-right hidden">2055</td>
                 <td class="align-right hidden">2340</td>
                 <td class="align-right">4395</td>
@@ -506,7 +555,10 @@
                 </td>
                 
                 <td>
-                    v0.5.4
+                    
+                        v0.5.4
+                    
+
                 </td>
                 <td class="monospace">5FF03C4431EA71B3</td>
                 <td>
@@ -523,12 +575,8 @@
     
         <h3><div>Other runs</div></h3>
         
-        
-
-
-
-<div class="leaderboard">
-    <table>
+        <div class="leaderboard">
+    <table class="replay-table">
         <tr>
             
             <th>Player</th>
@@ -555,7 +603,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2023-01-22</td>
                 <!--td>The FireRed</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">29333</td>
                 <td class="align-right hidden">11300</td>
                 <td class="align-right">40633</td>
@@ -580,7 +630,10 @@
                 </td>
                 
                 <td>
-                    v0.6.8
+                    
+                        v0.6.8
+                    
+
                 </td>
                 <td class="monospace">61FF94B873AD480B</td>
                 <td>
@@ -595,7 +648,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2023-01-06</td>
                 <!--td>The Great Encounters</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">25819</td>
                 <td class="align-right hidden">9865</td>
                 <td class="align-right">35684</td>
@@ -611,7 +666,10 @@
                 </td>
                 
                 <td>
-                    v0.6.8
+                    
+                        v0.6.8
+                    
+
                 </td>
                 <td class="monospace">CCAC5EE2FE216FA5</td>
                 <td>
@@ -626,7 +684,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-12-29</td>
                 <!--td>Team Diamond</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">29611</td>
                 <td class="align-right hidden">5144</td>
                 <td class="align-right">34755</td>
@@ -651,7 +711,10 @@
                 </td>
                 
                 <td>
-                    v0.6.7
+                    
+                        v0.6.7
+                    
+
                 </td>
                 <td class="monospace">E9DE16475A4C28F9</td>
                 <td>
@@ -666,7 +729,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-11-11</td>
                 <!--td>Majestic Dawn</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">23158</td>
                 <td class="align-right hidden">9550</td>
                 <td class="align-right">32708</td>
@@ -691,7 +756,10 @@
                 </td>
                 
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">24C06174DDCD427</td>
                 <td>
@@ -706,7 +774,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2022-12-25</td>
                 <!--td>Duo</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">9695</td>
                 <td class="align-right hidden">7935</td>
                 <td class="align-right">17630</td>
@@ -725,7 +795,10 @@
                 </td>
                 
                 <td>
-                    v0.6.7
+                    
+                        v0.6.7
+                    
+
                 </td>
                 <td class="monospace">75E3EAE92BBC4093</td>
                 <td>
@@ -740,7 +813,9 @@
                 <td class="player-cell">Shitpost Sunkern</td>
                 <td>2020-10-04</td>
                 <!--td>Team Turtle</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">9575</td>
                 <td class="align-right hidden">6670</td>
                 <td class="align-right">16245</td>
@@ -765,7 +840,10 @@
                 </td>
                 
                 <td>
-                    v0.2.1
+                    
+                        v0.2.1
+                    
+
                 </td>
                 <td class="monospace">F5687D31074A9786</td>
                 <td>
@@ -780,7 +858,9 @@
                 <td class="player-cell">Shitpost Sunkern</td>
                 <td>2020-12-24</td>
                 <!--td>Team Starlight</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">10957</td>
                 <td class="align-right hidden">5060</td>
                 <td class="align-right">16017</td>
@@ -805,7 +885,10 @@
                 </td>
                 
                 <td>
-                    v0.2.7.1
+                    
+                        v0.2.7.1
+                    
+
                 </td>
                 <td class="monospace">C264314218D14EB6</td>
                 <td>
@@ -820,7 +903,9 @@
                 <td class="player-cell">Shitpost Sunkern</td>
                 <td>2021-03-03</td>
                 <!--td>Koridai Crusaders</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">9748</td>
                 <td class="align-right hidden">2866</td>
                 <td class="align-right">12614</td>
@@ -845,7 +930,10 @@
                 </td>
                 
                 <td>
-                    v0.2.10
+                    
+                        v0.2.10
+                    
+
                 </td>
                 <td class="monospace">585DEFA6609ABC20</td>
                 <td>
@@ -860,7 +948,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2023-02-09</td>
                 <!--td>Rising Rivals</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">2460</td>
                 <td class="align-right hidden">2989</td>
                 <td class="align-right">5449</td>
@@ -876,7 +966,10 @@
                 </td>
                 
                 <td>
-                    v0.6.9
+                    
+                        v0.6.9
+                    
+
                 </td>
                 <td class="monospace">B3DF128571353DD0</td>
                 <td>
@@ -891,7 +984,9 @@
                 <td class="player-cell">2tousent</td>
                 <td>2022-03-21</td>
                 <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">27F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 27 pts">27F</span>
+                </td>
                 <td class="align-right hidden">9614</td>
                 <td class="align-right hidden">8032</td>
                 <td class="align-right">17646</td>
@@ -916,7 +1011,10 @@
                 </td>
                 
                 <td>
-                    v0.5.9
+                    
+                        v0.5.9
+                    
+
                 </td>
                 <td class="monospace">1B6DA0F531226A8E</td>
                 <td>
@@ -931,7 +1029,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-03-20</td>
                 <!--td>The Noble Victory</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">25F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 25 pts">25F</span>
+                </td>
                 <td class="align-right hidden">16566</td>
                 <td class="align-right hidden">7210</td>
                 <td class="align-right">23776</td>
@@ -956,7 +1056,10 @@
                 </td>
                 
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">DE05560875313ECD</td>
                 <td>
@@ -971,7 +1074,9 @@
                 <td class="player-cell">2tousent</td>
                 <td>2022-03-25</td>
                 <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">21F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 21 pts">21F</span>
+                </td>
                 <td class="align-right hidden">6097</td>
                 <td class="align-right hidden">1476</td>
                 <td class="align-right">7573</td>
@@ -993,7 +1098,10 @@
                 </td>
                 
                 <td>
-                    v0.5.9
+                    
+                        v0.5.9
+                    
+
                 </td>
                 <td class="monospace">0F574B3A8176835D</td>
                 <td>
@@ -1008,7 +1116,9 @@
                 <td class="player-cell">2tousent</td>
                 <td>2022-03-20</td>
                 <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">19F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 19 pts">19F</span>
+                </td>
                 <td class="align-right hidden">5658</td>
                 <td class="align-right hidden">3565</td>
                 <td class="align-right">9223</td>
@@ -1033,7 +1143,10 @@
                 </td>
                 
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">C7039A03574BCE5B</td>
                 <td>
@@ -1048,7 +1161,9 @@
                 <td class="player-cell">Obscured</td>
                 <td>2022-07-04</td>
                 <!--td>Team Magma</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">13F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 13 pts">13F</span>
+                </td>
                 <td class="align-right hidden">3180</td>
                 <td class="align-right hidden">11645</td>
                 <td class="align-right">14825</td>
@@ -1073,7 +1188,10 @@
                 </td>
                 
                 <td>
-                    v0.5.4
+                    
+                        v0.5.4
+                    
+
                 </td>
                 <td class="monospace">A6D874A3029ADBB5</td>
                 <td>
@@ -1088,7 +1206,9 @@
                 <td class="player-cell">Obscured</td>
                 <td>2022-07-05</td>
                 <!--td>Team Gym Heroes</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">13F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 13 pts">13F</span>
+                </td>
                 <td class="align-right hidden">2592</td>
                 <td class="align-right hidden">3805</td>
                 <td class="align-right">6397</td>
@@ -1113,7 +1233,10 @@
                 </td>
                 
                 <td>
-                    v0.5.4
+                    
+                        v0.5.4
+                    
+
                 </td>
                 <td class="monospace">DDBF0B2100BE2D1A</td>
                 <td>
@@ -1128,7 +1251,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-02-09</td>
                 <!--td>Team Skyridge</td-->
-                <td class="result-cell"><span class="result">Gave up</span><br><span class="floor">10F</span></td>
+                <td class="result-cell"><span class="result">Gave up</span><br>
+                    <span class="floor" title="Depth: 10 pts">10F</span>
+                </td>
                 <td class="align-right hidden">2694</td>
                 <td class="align-right hidden">2411</td>
                 <td class="align-right">5105</td>
@@ -1150,7 +1275,10 @@
                 </td>
                 
                 <td>
-                    v0.5.7
+                    
+                        v0.5.7
+                    
+
                 </td>
                 <td class="monospace">DEC46463114B9B50</td>
                 <td>
@@ -1165,7 +1293,9 @@
                 <td class="player-cell">Obscured</td>
                 <td>2022-06-29</td>
                 <!--td>Galactic Conquest</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">9F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 9 pts">9F</span>
+                </td>
                 <td class="align-right hidden">1101</td>
                 <td class="align-right hidden">6790</td>
                 <td class="align-right">7891</td>
@@ -1184,7 +1314,10 @@
                 </td>
                 
                 <td>
-                    v0.5.4
+                    
+                        v0.5.4
+                    
+
                 </td>
                 <td class="monospace">0D2C0CAD955E69B3</td>
                 <td>

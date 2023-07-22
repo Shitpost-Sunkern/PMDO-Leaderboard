@@ -66,6 +66,11 @@
             
             
         
+            
+            
+            
+            
+        
     </select>
 </div>
 
@@ -77,10 +82,11 @@
 
 
 
+
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>Guildmaster Trail - Story Info</h4><ul><li>Objective: Clear Guildmaster Trail on 30F.</li><li>Set level: Lv.5</li><li>No. starting items: 4</li><li>Max party size: 4</li><li>This dungeon is unlocked from the very beginning.</li></ul>"
+        content: "<h4>Guildmaster Trail - Story Info</h4><ul>            <li>Objective: Clear Guildmaster Trail on 30F.</li>            <li>Set level: Lv.5</li>            <li>No. starting items: 4</li>            <li>Max party size: 4</li>            <li>This dungeon is unlocked from the very beginning.</li>    </ul><h5>Depth scoring</h5><table class='depth-rubric'>            <tr><th>Floor</th><th>Depth points</th></tr>                    <tr>                <td>1F</td>                <td>1 pts</td>            </tr>                    <tr>                <td>2F</td>                <td>2 pts</td>            </tr>                    <tr>                <td>3F</td>                <td>3 pts</td>            </tr>                    <tr>                <td>4F</td>                <td>4 pts</td>            </tr>                    <tr>                <td>5F</td>                <td>5 pts</td>            </tr>                    <tr>                <td>6F</td>                <td>6 pts</td>            </tr>                    <tr>                <td>7F</td>                <td>7 pts</td>            </tr>                    <tr>                <td>8F</td>                <td>8 pts</td>            </tr>                    <tr>                <td>9F</td>                <td>9 pts</td>            </tr>                    <tr>                <td>10F</td>                <td>10 pts</td>            </tr>                    <tr>                <td>11F</td>                <td>11 pts</td>            </tr>                    <tr>                <td>12F</td>                <td>12 pts</td>            </tr>                    <tr>                <td>13F</td>                <td>13 pts</td>            </tr>                    <tr>                <td>14F</td>                <td>14 pts</td>            </tr>                    <tr>                <td>15F</td>                <td>15 pts</td>            </tr>                    <tr>                <td>16F</td>                <td>16 pts</td>            </tr>                    <tr>                <td>17F</td>                <td>17 pts</td>            </tr>                    <tr>                <td>18F</td>                <td>18 pts</td>            </tr>                    <tr>                <td>19F</td>                <td>19 pts</td>            </tr>                    <tr>                <td>20F</td>                <td>20 pts</td>            </tr>                    <tr>                <td>21F</td>                <td>21 pts</td>            </tr>                    <tr>                <td>22F</td>                <td>22 pts</td>            </tr>                    <tr>                <td>23F</td>                <td>23 pts</td>            </tr>                    <tr>                <td>24F</td>                <td>24 pts</td>            </tr>                    <tr>                <td>25F</td>                <td>25 pts</td>            </tr>                    <tr>                <td>26F</td>                <td>26 pts</td>            </tr>                    <tr>                <td>27F</td>                <td>27 pts</td>            </tr>                    <tr>                <td>28F</td>                <td>28 pts</td>            </tr>                    <tr>                <td>29F</td>                <td>29 pts</td>            </tr>                    <tr>                <td>30F</td>                <td>30 pts</td>            </tr>            </table>",
       });
     }
 </script>
@@ -92,12 +98,8 @@
 
     
 
-    
-
-
-
-<div class="leaderboard">
-    <table>
+    <div class="leaderboard">
+    <table class="replay-table">
         <tr>
             <th class="align-right">#</th>
             <th>Player</th>
@@ -124,7 +126,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-12-05</td>
                 <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">61861</td>
                 <td class="align-right hidden">14200</td>
                 <td class="align-right">76061</td>
@@ -153,7 +157,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.6
+                    
+                        v0.6.6
+                    
+
                 </td>
                 <td class="monospace">B6DFBE0374C54611</td>
                 <td>
@@ -168,7 +175,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2022-11-26</td>
                 <!--td>Spooks</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">30197</td>
                 <td class="align-right hidden">14866</td>
                 <td class="align-right">45063</td>
@@ -197,7 +206,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">AC5AC499263C44D8</td>
                 <td>
@@ -212,7 +224,9 @@
                 <td class="player-cell">Rime</td>
                 <td>2022-10-12</td>
                 <!--td>Team Guildmaster</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">17297</td>
                 <td class="align-right hidden">8498</td>
                 <td class="align-right">25795</td>
@@ -241,7 +255,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">A12761563BD0FC31</td>
                 <td>
@@ -256,7 +273,9 @@
                 <td class="player-cell">Rings</td>
                 <td>2022-10-25</td>
                 <!--td>Team Guildmaster</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">14830</td>
                 <td class="align-right hidden">7245</td>
                 <td class="align-right">22075</td>
@@ -285,7 +304,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
+                    
+                        v0.6.5<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
+                    
+
                 </td>
                 <td class="monospace">D3AA769AF1AAE72E</td>
                 <td>
@@ -300,7 +322,9 @@
                 <td class="player-cell">Nemo the Axolotl</td>
                 <td>2022-06-29</td>
                 <!--td>Wyrmlings</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">12285</td>
                 <td class="align-right hidden">9010</td>
                 <td class="align-right">21295</td>
@@ -329,7 +353,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.17
+                    
+                        v0.5.17
+                    
+
                 </td>
                 <td class="monospace">261C53BF7AB3925D</td>
                 <td>
@@ -344,7 +371,9 @@
                 <td class="player-cell">Audino</td>
                 <td>2022-05-14</td>
                 <!--td>Blastoise</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">14408</td>
                 <td class="align-right hidden">2287</td>
                 <td class="align-right">16695</td>
@@ -373,7 +402,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.12 (beta)
+                    
+                        v0.5.12 (beta)
+                    
+
                 </td>
                 <td class="monospace">E249554DB0D07AB9</td>
                 <td>
@@ -388,7 +420,9 @@
                 <td class="player-cell">justjude97</td>
                 <td>2022-03-12</td>
                 <!--td>pokefinders</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">7097</td>
                 <td class="align-right hidden">4589</td>
                 <td class="align-right">8686</td>
@@ -417,7 +451,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">5FD358B460CD7641</td>
                 <td>
@@ -432,7 +469,9 @@
                 <td class="player-cell">Filthy</td>
                 <td>2022-01-08</td>
                 <!--td>Nightrise</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">3352</td>
                 <td class="align-right hidden">3000</td>
                 <td class="align-right">6082</td>
@@ -461,7 +500,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.5
+                    
+                        v0.5.5
+                    
+
                 </td>
                 <td class="monospace">F1B929298FF5E175</td>
                 <td>
@@ -476,7 +518,9 @@
                 <td class="player-cell">Daowlie10</td>
                 <td>2022-08-07</td>
                 <!--td>One-for-All</td-->
-                <td class="result-cell"><span class="result">Escaped</span><br><span class="floor">23F</span></td>
+                <td class="result-cell"><span class="result">Escaped</span><br>
+                    <span class="floor" title="Depth: 23 pts">23F</span>
+                </td>
                 <td class="align-right hidden">14474</td>
                 <td class="align-right hidden">7010</td>
                 <td class="align-right">21484</td>
@@ -505,7 +549,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.20
+                    
+                        v0.5.20
+                    
+
                 </td>
                 <td class="monospace">92E2BDB20ACED7EE</td>
                 <td>
@@ -520,7 +567,9 @@
                 <td class="player-cell">Aviivix</td>
                 <td>2022-03-20</td>
                 <!--td>Aves</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">23F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 23 pts">23F</span>
+                </td>
                 <td class="align-right hidden">6314</td>
                 <td class="align-right hidden">5328</td>
                 <td class="align-right">11642</td>
@@ -549,7 +598,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">9B88376F0F5FC8A7</td>
                 <td>
@@ -564,7 +616,9 @@
                 <td class="player-cell">friend</td>
                 <td>2023-03-30</td>
                 <!--td>Ad Caelum</td-->
-                <td class="result-cell"><span class="result">Escaped</span><br><span class="floor">22F</span></td>
+                <td class="result-cell"><span class="result">Escaped</span><br>
+                    <span class="floor" title="Depth: 22 pts">22F</span>
+                </td>
                 <td class="align-right hidden">13717</td>
                 <td class="align-right hidden">10810</td>
                 <td class="align-right">18072</td>
@@ -593,7 +647,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.7.4
+                    
+                        v0.7.4
+                    
+
                 </td>
                 <td class="monospace">94F56C2AB169B480</td>
                 <td>
@@ -608,7 +665,9 @@
                 <td class="player-cell">NanaelJustice</td>
                 <td>2022-03-27</td>
                 <!--td>Cure Justice</td-->
-                <td class="result-cell"><span class="result">Escaped</span><br><span class="floor">16F</span></td>
+                <td class="result-cell"><span class="result">Escaped</span><br>
+                    <span class="floor" title="Depth: 16 pts">16F</span>
+                </td>
                 <td class="align-right hidden">5159</td>
                 <td class="align-right hidden">7712</td>
                 <td class="align-right">12546</td>
@@ -637,7 +696,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.7.4
+                    
+                        v0.7.4
+                    
+
                 </td>
                 <td class="monospace">2781DF32454391AB</td>
                 <td>
@@ -652,7 +714,9 @@
                 <td class="player-cell">Vladcik</td>
                 <td>2022-06-09</td>
                 <!--td>RNG</td-->
-                <td class="result-cell"><span class="result">Escaped</span><br><span class="floor">11F</span></td>
+                <td class="result-cell"><span class="result">Escaped</span><br>
+                    <span class="floor" title="Depth: 11 pts">11F</span>
+                </td>
                 <td class="align-right hidden">2548</td>
                 <td class="align-right hidden">5175</td>
                 <td class="align-right">6345</td>
@@ -681,7 +745,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.14.1
+                    
+                        v0.5.14.1
+                    
+
                 </td>
                 <td class="monospace">730FDC91C0577929</td>
                 <td>
@@ -696,7 +763,9 @@
                 <td class="player-cell">Paravoina</td>
                 <td>2022-03-17</td>
                 <!--td>Myself&I</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br><span class="floor">6F</span></td>
+                <td class="result-cell"><span class="result">Defeated</span><br>
+                    <span class="floor" title="Depth: 6 pts">6F</span>
+                </td>
                 <td class="align-right hidden">362</td>
                 <td class="align-right hidden">4233</td>
                 <td class="align-right">4595</td>
@@ -725,7 +794,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">A3FA7507EFFE7164</td>
                 <td>
@@ -742,12 +814,8 @@
     
         <h3><div>Other runs</div></h3>
         
-        
-
-
-
-<div class="leaderboard">
-    <table>
+        <div class="leaderboard">
+    <table class="replay-table">
         <tr>
             
             <th>Player</th>
@@ -774,7 +842,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-12-03</td>
                 <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">46021</td>
                 <td class="align-right hidden">10200</td>
                 <td class="align-right">44134</td>
@@ -803,7 +873,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.6
+                    
+                        v0.6.6
+                    
+
                 </td>
                 <td class="monospace">FAF44CCD701607AA</td>
                 <td>
@@ -818,7 +891,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2022-12-23</td>
                 <!--td>Spooks</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">27489</td>
                 <td class="align-right hidden">11000</td>
                 <td class="align-right">38489</td>
@@ -841,7 +916,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.7
+                    
+                        v0.6.7
+                    
+
                 </td>
                 <td class="monospace">47E43AC10BD1F2E2</td>
                 <td>
@@ -856,7 +934,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-11-06</td>
                 <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">31329</td>
                 <td class="align-right hidden">2912</td>
                 <td class="align-right">34241</td>
@@ -885,7 +965,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">BA7A351FDC042787</td>
                 <td>
@@ -900,7 +983,9 @@
                 <td class="player-cell">Trio-</td>
                 <td>2022-11-22</td>
                 <!--td>Charged</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">16677</td>
                 <td class="align-right hidden">13036</td>
                 <td class="align-right">28754</td>
@@ -929,7 +1014,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">9E39195C926B41E0</td>
                 <td>
@@ -944,7 +1032,9 @@
                 <td class="player-cell">Rime</td>
                 <td>2022-11-10</td>
                 <!--td>Team Guildmaster</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">13264</td>
                 <td class="align-right hidden">9885</td>
                 <td class="align-right">23149</td>
@@ -973,7 +1063,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.6.5
+                    
+                        v0.6.5
+                    
+
                 </td>
                 <td class="monospace">724B3DC877EA682C</td>
                 <td>
@@ -988,7 +1081,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-02-06</td>
                 <!--td>Team Leaflare</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">6612</td>
                 <td class="align-right hidden">15460</td>
                 <td class="align-right">22072</td>
@@ -1017,7 +1112,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.6
+                    
+                        v0.5.6
+                    
+
                 </td>
                 <td class="monospace">0D6CDF4101877FB8</td>
                 <td>
@@ -1032,7 +1130,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2022-02-28</td>
                 <!--td>Team Guildmaster</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br><span class="floor">30F</span></td>
+                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
+                    <span class="floor" title="Depth: 30 pts">30F</span>
+                </td>
                 <td class="align-right hidden">8267</td>
                 <td class="align-right hidden">5574</td>
                 <td class="align-right">13841</td>
@@ -1061,7 +1161,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.5.8
+                    
+                        v0.5.8
+                    
+
                 </td>
                 <td class="monospace">1B48D72BF063FB08</td>
                 <td>
@@ -1076,7 +1179,9 @@
                 <td class="player-cell">Xindage</td>
                 <td>2023-03-07</td>
                 <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result">Escaped</span><br><span class="floor">22F</span></td>
+                <td class="result-cell"><span class="result">Escaped</span><br>
+                    <span class="floor" title="Depth: 22 pts">22F</span>
+                </td>
                 <td class="align-right hidden">33559</td>
                 <td class="align-right hidden">11870</td>
                 <td class="align-right">45429</td>
@@ -1105,7 +1210,10 @@
                     </ul>
                 </td>
                 <td>
-                    v0.7.0
+                    
+                        v0.7.0
+                    
+
                 </td>
                 <td class="monospace">D96DD30C8B3D8352</td>
                 <td>

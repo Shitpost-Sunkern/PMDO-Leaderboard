@@ -66,6 +66,11 @@
             
             
         
+            
+            
+            
+            
+        
     </select>
 </div>
 
@@ -77,10 +82,11 @@
 
 
 
+
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>Destiny Tower Info</h4><ul></ul>"
+        content: "<h4>Destiny Tower Info</h4><ul>    </ul><h5>Depth scoring</h5><table class='depth-rubric'>            <tr><th>Floor</th><th>Depth points</th></tr>            </table>",
       });
     }
 </script>
@@ -92,12 +98,8 @@
 
     
 
-    
-
-
-
-<div class="leaderboard">
-    <table>
+    <div class="leaderboard">
+    <table class="replay-table">
         <tr>
             <th class="align-right">#</th>
             <th>Player</th>

@@ -8,7 +8,7 @@ theme: theme-guildmaster theme-solid
 
 ---
 
-Post your replays in the #playthroughs-share channel in the PMDO Discord to get put up on the leaderboard! It's OK if you didn't clear the dungeon &mdash; if you get a personal best, that's good too.
+Post your replays in the #pmdo-playthroughs channel in the PMDO Discord to get put up on the leaderboard! It's OK if you didn't clear the dungeon &mdash; if you get a personal best, that's good too.
 
 Please feel free to contact us about any other concerns (e.g. name changes, removing your records)
 

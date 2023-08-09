@@ -53,6 +53,8 @@
                     
                         <option value="/leaderboards/PMDO/secret-garden-roguelocke.html" >Secret Garden - Roguelocke</option>
                     
+                        <option value="/leaderboards/PMDO/castaway-cave-roguelocke.html" >Castaway Cave - Roguelocke</option>
+                    
                 </optgroup>
             
         
@@ -86,7 +88,7 @@
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>Guildmaster Trail - Roguelocke Info</h4><ul>            <li>Objective: In Roguelocke mode, clear Guildmaster Trail on 30F.</li>            <li>Set level: Lv.5</li>            <li>Max party size: 4. Only one Pokémon may be brought into the dungeon.</li>            <li>This dungeon is unlocked from the very beginning.</li>    </ul><h5>Depth scoring</h5><table class='depth-rubric'>            <tr><th>Floor</th><th>Depth points</th></tr>                    <tr>                <td>1F</td>                <td>1 pts</td>            </tr>                    <tr>                <td>2F</td>                <td>2 pts</td>            </tr>                    <tr>                <td>3F</td>                <td>3 pts</td>            </tr>                    <tr>                <td>4F</td>                <td>4 pts</td>            </tr>                    <tr>                <td>5F</td>                <td>5 pts</td>            </tr>                    <tr>                <td>6F</td>                <td>6 pts</td>            </tr>                    <tr>                <td>7F</td>                <td>7 pts</td>            </tr>                    <tr>                <td>8F</td>                <td>8 pts</td>            </tr>                    <tr>                <td>9F</td>                <td>9 pts</td>            </tr>                    <tr>                <td>10F</td>                <td>10 pts</td>            </tr>                    <tr>                <td>11F</td>                <td>11 pts</td>            </tr>                    <tr>                <td>12F</td>                <td>12 pts</td>            </tr>                    <tr>                <td>13F</td>                <td>13 pts</td>            </tr>                    <tr>                <td>14F</td>                <td>14 pts</td>            </tr>                    <tr>                <td>15F</td>                <td>15 pts</td>            </tr>                    <tr>                <td>16F</td>                <td>16 pts</td>            </tr>                    <tr>                <td>17F</td>                <td>17 pts</td>            </tr>                    <tr>                <td>18F</td>                <td>18 pts</td>            </tr>                    <tr>                <td>19F</td>                <td>19 pts</td>            </tr>                    <tr>                <td>20F</td>                <td>20 pts</td>            </tr>                    <tr>                <td>21F</td>                <td>21 pts</td>            </tr>                    <tr>                <td>22F</td>                <td>22 pts</td>            </tr>                    <tr>                <td>23F</td>                <td>23 pts</td>            </tr>                    <tr>                <td>24F</td>                <td>24 pts</td>            </tr>                    <tr>                <td>25F</td>                <td>25 pts</td>            </tr>                    <tr>                <td>26F</td>                <td>26 pts</td>            </tr>                    <tr>                <td>27F</td>                <td>27 pts</td>            </tr>                    <tr>                <td>28F</td>                <td>28 pts</td>            </tr>                    <tr>                <td>29F</td>                <td>29 pts</td>            </tr>                    <tr>                <td>30F</td>                <td>30 pts</td>            </tr>            </table>",
+        content: "<h4>Guildmaster Trail - Roguelocke Info</h4><ul>            <li>Objective: In Roguelocke mode, clear Guildmaster Trail on 30F.</li>            <li>Set level: Lv.5</li>            <li>Max party size: 4. Only one Pokémon may be brought into the dungeon.</li>            <li>This dungeon is unlocked from the very beginning.</li>    </ul>",
       });
     }
 </script>
@@ -99,476 +101,771 @@
     
 
     <div class="leaderboard">
+  
+  
     <table class="replay-table">
+      <tr>
+        
+          <th class="align-right">#</th>
+        
+        <th>Player</th>
+        <th>Date</th>
+        <!--th>Team Name</th-->
+        <th>Result</th>
+        <th class="align-right hidden">Money</th>
+        <th class="align-right hidden">Inv. Value</th>
+        <th class="align-right">Score</th>
+        <th class="align-right">Turns</th>
+        <th class="align-right">Time</th>
+        <th>Team</th>
+        
+        <th>Version</th>
+        <th>Seed</th>
+        <th>Replay</th>
+        <!--th>Notes</th-->
+      </tr>
+      
+
+      
         <tr>
-            <th class="align-right">#</th>
-            <th>Player</th>
-            <th>Date</th>
-            <!--th>Team Name</th-->
-            <th>Result</th>
-            <th class="align-right hidden">Money</th>
-            <th class="align-right hidden">Inv. Value</th>
-            <th class="align-right">Score</th>
-            <th class="align-right">Turns</th>
-            <th class="align-right">Time</th>
-            <th>Team</th>
+          
+            <td class="align-right">1</td>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2023-03-04</td>
+          <!--td>Team Creation</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">48014</td>
+          <td class="align-right hidden">13650</td>
+          <td class="align-right">61664</td>
+          <td class="align-right">9739</td>
+          <td class="align-right">
+            -:--:--
             
-            <th>Version</th>
-            <th>Seed</th>
-            <th>Replay</th>
-            <!--th>Notes</th-->
+          </td>
+          <td class="team-cell">
+            <h5>Team Creation</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/flygon-shiny.png"
+                    alt="Flygon"
+                    title="Flygon"
+                    class="portrait">
+                  <figcaption>Flygon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/dragonite.png"
+                    alt="Dragonite"
+                    title="Dragonite"
+                    class="portrait">
+                  <figcaption> Dragonite</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/mawile.png"
+                    alt="Mawile"
+                    title="Mawile"
+                    class="portrait">
+                  <figcaption> Mawile</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.9
+            
+
+          </td>
+          <td class="monospace">EF666C0D19AE8A8E</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2023-02-24_21-40-41.rsrec" target="_blank">2023-02-24_21-40-41.rsrec</a>
+            
+            
+          </td>
+          <!--td>Must select "Yes" at all "...are you sure?" prompts. Time is invalid due to replay issues.</td-->
         </tr>
-        
-        
-        
-            <tr>
-                <td class="align-right">1</td>
-                <td class="player-cell">Xindage</td>
-                <td>2023-03-04</td>
-                <!--td>Team Creation</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">48014</td>
-                <td class="align-right hidden">13650</td>
-                <td class="align-right">61664</td>
-                <td class="align-right">9739</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Creation</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/flygon-shiny.png" alt="Flygon" title="Flygon" class="portrait">
-                                <figcaption>Flygon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/dragonite.png" alt="Dragonite" title="Dragonite" class="portrait">
-                                <figcaption> Dragonite</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/mawile.png" alt="Mawile" title="Mawile" class="portrait">
-                                <figcaption> Mawile</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.9
-                    
+      
+        <tr>
+          
+            <td class="align-right">2</td>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2022-12-08</td>
+          <!--td>PipInstall</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">39953</td>
+          <td class="align-right hidden">1481</td>
+          <td class="align-right">41434</td>
+          <td class="align-right">10707</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>PipInstall</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/empoleon.png"
+                    alt="Empoleon"
+                    title="Empoleon"
+                    class="portrait">
+                  <figcaption>Pip</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/leafeon.png"
+                    alt="Leafeon"
+                    title="Leafeon"
+                    class="portrait">
+                  <figcaption> Leafeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/ninetales.png"
+                    alt="Ninetales"
+                    title="Ninetales"
+                    class="portrait">
+                  <figcaption> Ninetales</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption> Charizard</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.8
+            
 
-                </td>
-                <td class="monospace">EF666C0D19AE8A8E</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2023-02-24_21-40-41.rsrec" target="_blank">2023-02-24_21-40-41.rsrec</a>
-                    
-                </td>
-                <!--td>Must select "Yes" at all "...are you sure?" prompts. Time is invalid due to replay issues.</td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">2</td>
-                <td class="player-cell">Trio-</td>
-                <td>2022-12-08</td>
-                <!--td>PipInstall</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">39953</td>
-                <td class="align-right hidden">1481</td>
-                <td class="align-right">41434</td>
-                <td class="align-right">10707</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>PipInstall</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/empoleon.png" alt="Empoleon" title="Empoleon" class="portrait">
-                                <figcaption>Pip</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/leafeon.png" alt="Leafeon" title="Leafeon" class="portrait">
-                                <figcaption> Leafeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/ninetales.png" alt="Ninetales" title="Ninetales" class="portrait">
-                                <figcaption> Ninetales</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption> Charizard</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.8
-                    
+          </td>
+          <td class="monospace">7AAA028BA74DDE1B</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-12-08_12-49-28.rsrec" target="_blank">2022-12-08_12-49-28.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">3</td>
+          
+          <td class="player-cell">Dragonfabri</td>
+          <td>2023-02-05</td>
+          <!--td>Fabrighoard</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">29958</td>
+          <td class="align-right hidden">4615</td>
+          <td class="align-right">34573</td>
+          <td class="align-right">11293</td>
+          <td class="align-right">
+            
+              4:37:29
+          </td>
+          <td class="team-cell">
+            <h5>Fabrighoard</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/sudowoodo-shiny.png"
+                    alt="Sudowoodo"
+                    title="Sudowoodo"
+                    class="portrait">
+                  <figcaption>Fabri</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/scyther.png"
+                    alt="Scyther"
+                    title="Scyther"
+                    class="portrait">
+                  <figcaption> Scyther</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/gyarados-female.png"
+                    alt="Gyarados"
+                    title="Gyarados"
+                    class="portrait">
+                  <figcaption> Gyarados</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/cherrim.png"
+                    alt="Cherrim"
+                    title="Cherrim"
+                    class="portrait">
+                  <figcaption> Cherrim</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.9
+            
 
-                </td>
-                <td class="monospace">7AAA028BA74DDE1B</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-12-08_12-49-28.rsrec" target="_blank">2022-12-08_12-49-28.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">3</td>
-                <td class="player-cell">Dragonfabri</td>
-                <td>2023-02-05</td>
-                <!--td>Fabrighoard</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">29958</td>
-                <td class="align-right hidden">4615</td>
-                <td class="align-right">34573</td>
-                <td class="align-right">11293</td>
-                <td class="align-right">4:37:29</td>
-                <td class="team-cell">
-                    <h5>Fabrighoard</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/sudowoodo-shiny.png" alt="Sudowoodo" title="Sudowoodo" class="portrait">
-                                <figcaption>Fabri</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/scyther.png" alt="Scyther" title="Scyther" class="portrait">
-                                <figcaption> Scyther</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/gyarados-female.png" alt="Gyarados" title="Gyarados" class="portrait">
-                                <figcaption> Gyarados</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/cherrim.png" alt="Cherrim" title="Cherrim" class="portrait">
-                                <figcaption> Cherrim</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.9
-                    
+          </td>
+          <td class="monospace">D0DFE3CB0AD76A73</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2023-02-05_00-08-16.rsrec" target="_blank">2023-02-05_00-08-16.rsrec</a>
+            
+            
+          </td>
+          <!--td>Must select "Yes" at the "...are you sure?" prompt.</td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">4</td>
+          
+          <td class="player-cell">Shitpost Sunkern</td>
+          <td>2020-10-23</td>
+          <!--td>Saucy Squad</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">9628</td>
+          <td class="align-right hidden">9427</td>
+          <td class="align-right">19055</td>
+          <td class="align-right">8818</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Saucy Squad</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption>Sriracha</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/meganium.png"
+                    alt="Meganium"
+                    title="Meganium"
+                    class="portrait">
+                  <figcaption> Pesto</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/lumineon-female.png"
+                    alt="Lumineon"
+                    title="Lumineon"
+                    class="portrait">
+                  <figcaption> Worcestershire</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/flygon.png"
+                    alt="Flygon"
+                    title="Flygon"
+                    class="portrait">
+                  <figcaption> Vodka</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/quagsire.png"
+                    alt="Quagsire"
+                    title="Quagsire"
+                    class="portrait">
+                  <figcaption> Hoisin</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.2.3
+            
 
-                </td>
-                <td class="monospace">D0DFE3CB0AD76A73</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2023-02-05_00-08-16.rsrec" target="_blank">2023-02-05_00-08-16.rsrec</a>
-                    
-                </td>
-                <!--td>Must select "Yes" at the "...are you sure?" prompt.</td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">4</td>
-                <td class="player-cell">Shitpost Sunkern</td>
-                <td>2020-10-23</td>
-                <!--td>Saucy Squad</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">9628</td>
-                <td class="align-right hidden">9427</td>
-                <td class="align-right">19055</td>
-                <td class="align-right">8818</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Saucy Squad</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption>Sriracha</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/meganium.png" alt="Meganium" title="Meganium" class="portrait">
-                                <figcaption> Pesto</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/lumineon-female.png" alt="Lumineon" title="Lumineon" class="portrait">
-                                <figcaption> Worcestershire</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/flygon.png" alt="Flygon" title="Flygon" class="portrait">
-                                <figcaption> Vodka</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/quagsire.png" alt="Quagsire" title="Quagsire" class="portrait">
-                                <figcaption> Hoisin</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.2.3
-                    
+          </td>
+          <td class="monospace">7EE48B9068A5F79C</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2020-10-23_01-46-51.rsrec" target="_blank">2020-10-23_01-46-51.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/gfTSloA7tBY"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td>This run prominently features a bug present in this version of PMDO which allows more than four party members to be used simultaneously.</td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">5</td>
+          
+          <td class="player-cell">justjude97</td>
+          <td>2022-03-20</td>
+          <!--td>misplay</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">10775</td>
+          <td class="align-right hidden">2205</td>
+          <td class="align-right">12980</td>
+          <td class="align-right">7380</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>misplay</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/feraligatr.png"
+                    alt="Feraligatr"
+                    title="Feraligatr"
+                    class="portrait">
+                  <figcaption>totes cool</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/meganium.png"
+                    alt="Meganium"
+                    title="Meganium"
+                    class="portrait">
+                  <figcaption> leafy</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vappy</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/pidgeot.png"
+                    alt="Pidgeot"
+                    title="Pidgeot"
+                    class="portrait">
+                  <figcaption> birb</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.8
+            
 
-                </td>
-                <td class="monospace">7EE48B9068A5F79C</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2020-10-23_01-46-51.rsrec" target="_blank">2020-10-23_01-46-51.rsrec</a>
-                    <br><a href="https://youtu.be/gfTSloA7tBY" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td>This run prominently features a bug present in this version of PMDO which allows more than four party members to be used simultaneously.</td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">5</td>
-                <td class="player-cell">justjude97</td>
-                <td>2022-03-20</td>
-                <!--td>misplay</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">10775</td>
-                <td class="align-right hidden">2205</td>
-                <td class="align-right">12980</td>
-                <td class="align-right">7380</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>misplay</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/feraligatr.png" alt="Feraligatr" title="Feraligatr" class="portrait">
-                                <figcaption>totes cool</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/meganium.png" alt="Meganium" title="Meganium" class="portrait">
-                                <figcaption> leafy</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vappy</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/pidgeot.png" alt="Pidgeot" title="Pidgeot" class="portrait">
-                                <figcaption> birb</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.8
-                    
+          </td>
+          <td class="monospace">D205F5DCC5EE6A1F</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-20_00-25-23.rsrec" target="_blank">2022-03-20_00-25-23.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">6</td>
+          
+          <td class="player-cell">CobaltGray</td>
+          <td>2022-11-09</td>
+          <!--td>Gensokyo Drifters</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">7908</td>
+          <td class="align-right hidden">5002</td>
+          <td class="align-right">12910</td>
+          <td class="align-right">8162</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Gensokyo Drifters</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/charizard-shiny.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption>Cody</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/flygon.png"
+                    alt="Flygon"
+                    title="Flygon"
+                    class="portrait">
+                  <figcaption> Emerald</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/gardevoir.png"
+                    alt="Gardevoir"
+                    title="Gardevoir"
+                    class="portrait">
+                  <figcaption> Eclipse</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/jynx.png"
+                    alt="Jynx"
+                    title="Jynx"
+                    class="portrait">
+                  <figcaption> Cerulean</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.5
+            
 
-                </td>
-                <td class="monospace">D205F5DCC5EE6A1F</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-20_00-25-23.rsrec" target="_blank">2022-03-20_00-25-23.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">6</td>
-                <td class="player-cell">CobaltGray</td>
-                <td>2022-11-09</td>
-                <!--td>Gensokyo Drifters</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">7908</td>
-                <td class="align-right hidden">5002</td>
-                <td class="align-right">12910</td>
-                <td class="align-right">8162</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Gensokyo Drifters</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/charizard-shiny.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption>Cody</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/flygon.png" alt="Flygon" title="Flygon" class="portrait">
-                                <figcaption> Emerald</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/gardevoir.png" alt="Gardevoir" title="Gardevoir" class="portrait">
-                                <figcaption> Eclipse</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/jynx.png" alt="Jynx" title="Jynx" class="portrait">
-                                <figcaption> Cerulean</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.5
-                    
+          </td>
+          <td class="monospace">10BC75076D9F8126</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-11-09_17-56-55.rsrec" target="_blank">2022-11-09_17-56-55.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">7</td>
+          
+          <td class="player-cell">2tousent</td>
+          <td>2022-03-27</td>
+          <!--td>Doom Desire</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">6466</td>
+          <td class="align-right hidden">2085</td>
+          <td class="align-right">8551</td>
+          <td class="align-right">8187</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Doom Desire</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/nidoking.png"
+                    alt="Nidoking"
+                    title="Nidoking"
+                    class="portrait">
+                  <figcaption>Nidoking</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vibrava.png"
+                    alt="Vibrava"
+                    title="Vibrava"
+                    class="portrait">
+                  <figcaption> Vibrava</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/leafeon.png"
+                    alt="Leafeon"
+                    title="Leafeon"
+                    class="portrait">
+                  <figcaption> Leafeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/riolu.png"
+                    alt="Riolu"
+                    title="Riolu"
+                    class="portrait">
+                  <figcaption> Riolu</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.9
+            
 
-                </td>
-                <td class="monospace">10BC75076D9F8126</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-11-09_17-56-55.rsrec" target="_blank">2022-11-09_17-56-55.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">7</td>
-                <td class="player-cell">2tousent</td>
-                <td>2022-03-27</td>
-                <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">6466</td>
-                <td class="align-right hidden">2085</td>
-                <td class="align-right">8551</td>
-                <td class="align-right">8187</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Doom Desire</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/nidoking.png" alt="Nidoking" title="Nidoking" class="portrait">
-                                <figcaption>Nidoking</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vibrava.png" alt="Vibrava" title="Vibrava" class="portrait">
-                                <figcaption> Vibrava</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/leafeon.png" alt="Leafeon" title="Leafeon" class="portrait">
-                                <figcaption> Leafeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/riolu.png" alt="Riolu" title="Riolu" class="portrait">
-                                <figcaption> Riolu</figcaption>
-                            </figure></div>
-                </td>
+          </td>
+          <td class="monospace">8F730822BDA04D3E</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-27_14-38-40.rsrec" target="_blank">2022-03-27_14-38-40.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/JEYKb9T7Kbs"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">8</td>
+          
+          <td class="player-cell">f UwU</td>
+          <td>2022-05-16</td>
+          <!--td>Time's End</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td>
-                    
-                        v0.5.9
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 24 pts">
+                  24F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">6178</td>
+          <td class="align-right hidden">4620</td>
+          <td class="align-right">10798</td>
+          <td class="align-right">7273</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Time's End</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/teddiursa.png"
+                    alt="Teddiursa"
+                    title="Teddiursa"
+                    class="portrait">
+                  <figcaption>Teddiursa</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/octillery.png"
+                    alt="Octillery"
+                    title="Octillery"
+                    class="portrait">
+                  <figcaption> Octillery</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.8
+            
 
-                </td>
-                <td class="monospace">8F730822BDA04D3E</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-27_14-38-40.rsrec" target="_blank">2022-03-27_14-38-40.rsrec</a>
-                    <br><a href="https://youtu.be/JEYKb9T7Kbs" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">8</td>
-                <td class="player-cell">f UwU</td>
-                <td>2022-05-16</td>
-                <!--td>Time's End</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 24 pts">24F</span>
-                </td>
-                <td class="align-right hidden">6178</td>
-                <td class="align-right hidden">4620</td>
-                <td class="align-right">10798</td>
-                <td class="align-right">7273</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Time's End</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/teddiursa.png" alt="Teddiursa" title="Teddiursa" class="portrait">
-                                <figcaption>Teddiursa</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/octillery.png" alt="Octillery" title="Octillery" class="portrait">
-                                <figcaption> Octillery</figcaption>
-                            </figure></div>
-                </td>
+          </td>
+          <td class="monospace">527A873B98D29420</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-05-16_18-15-49.rsrec" target="_blank">2022-05-16_18-15-49.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">9</td>
+          
+          <td class="player-cell">The kitchen sunk</td>
+          <td>2023-02-17</td>
+          <!--td>The Noble Victory</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td>
-                    
-                        v0.5.8
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 21 pts">
+                  21F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">7574</td>
+          <td class="align-right hidden">5875</td>
+          <td class="align-right">13449</td>
+          <td class="align-right">8497</td>
+          <td class="align-right">
+            
+              4:34:05
+          </td>
+          <td class="team-cell">
+            <h5>The Noble Victory</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/lickilicky.png"
+                    alt="Lickilicky"
+                    title="Lickilicky"
+                    class="portrait">
+                  <figcaption>Lickilicky</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/houndoom.png"
+                    alt="Houndoom"
+                    title="Houndoom"
+                    class="portrait">
+                  <figcaption> Houndoom</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/luxray.png"
+                    alt="Luxray"
+                    title="Luxray"
+                    class="portrait">
+                  <figcaption> Luxray</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/larvitar.png"
+                    alt="Larvitar"
+                    title="Larvitar"
+                    class="portrait">
+                  <figcaption> Larvitar</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.9
+                <sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
+              
+            
 
-                </td>
-                <td class="monospace">527A873B98D29420</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-05-16_18-15-49.rsrec" target="_blank">2022-05-16_18-15-49.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">9</td>
-                <td class="player-cell">The kitchen sunk</td>
-                <td>2023-02-17</td>
-                <!--td>The Noble Victory</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 21 pts">21F</span>
-                </td>
-                <td class="align-right hidden">7574</td>
-                <td class="align-right hidden">5875</td>
-                <td class="align-right">13449</td>
-                <td class="align-right">8497</td>
-                <td class="align-right">4:34:05</td>
-                <td class="team-cell">
-                    <h5>The Noble Victory</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/lickilicky.png" alt="Lickilicky" title="Lickilicky" class="portrait">
-                                <figcaption>Lickilicky</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/houndoom.png" alt="Houndoom" title="Houndoom" class="portrait">
-                                <figcaption> Houndoom</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/luxray.png" alt="Luxray" title="Luxray" class="portrait">
-                                <figcaption> Luxray</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/larvitar.png" alt="Larvitar" title="Larvitar" class="portrait">
-                                <figcaption> Larvitar</figcaption>
-                            </figure></div>
-                </td>
+          </td>
+          <td class="monospace">48E0479601F49FCF</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/The_great_tale_of_Lickilicky.rsrec" target="_blank">The_great_tale_of_Lickilicky.rsrec</a>
+            
+            
+          </td>
+          <!--td>Must select "Yes" at the "...are you sure?" prompt.</td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">10</td>
+          
+          <td class="player-cell">Obscured</td>
+          <td>2022-07-06</td>
+          <!--td>Team Outlaw</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td>
-                    
-                        v0.6.9<sup class="gender-unlock" title="This run uses Gender Unlock.">⚥</sup>
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 18 pts">
+                  18F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">2055</td>
+          <td class="align-right hidden">2340</td>
+          <td class="align-right">4395</td>
+          <td class="align-right">3396</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Outlaw</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/quilava-shiny.png"
+                    alt="Quilava"
+                    title="Quilava"
+                    class="portrait">
+                  <figcaption>Quilava</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/kecleon.png"
+                    alt="Kecleon"
+                    title="Kecleon"
+                    class="portrait">
+                  <figcaption> Kecleon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/voltorb.png"
+                    alt="Voltorb"
+                    title="Voltorb"
+                    class="portrait">
+                  <figcaption> Voltorb</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/staravia.png"
+                    alt="Staravia"
+                    title="Staravia"
+                    class="portrait">
+                  <figcaption> Staravia</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.4
+            
 
-                </td>
-                <td class="monospace">48E0479601F49FCF</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/The_great_tale_of_Lickilicky.rsrec" target="_blank">The_great_tale_of_Lickilicky.rsrec</a>
-                    
-                </td>
-                <!--td>Must select "Yes" at the "...are you sure?" prompt.</td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">10</td>
-                <td class="player-cell">Obscured</td>
-                <td>2022-07-06</td>
-                <!--td>Team Outlaw</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 18 pts">18F</span>
-                </td>
-                <td class="align-right hidden">2055</td>
-                <td class="align-right hidden">2340</td>
-                <td class="align-right">4395</td>
-                <td class="align-right">3396</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Outlaw</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/quilava-shiny.png" alt="Quilava" title="Quilava" class="portrait">
-                                <figcaption>Quilava</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/kecleon.png" alt="Kecleon" title="Kecleon" class="portrait">
-                                <figcaption> Kecleon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/voltorb.png" alt="Voltorb" title="Voltorb" class="portrait">
-                                <figcaption> Voltorb</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/staravia.png" alt="Staravia" title="Staravia" class="portrait">
-                                <figcaption> Staravia</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.4
-                    
-
-                </td>
-                <td class="monospace">5FF03C4431EA71B3</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-07-06_20-03-02.rsrec" target="_blank">2022-07-06_20-03-02.rsrec</a>
-                    <br><a href="https://youtu.be/zKYKdBrgWCk" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
+          </td>
+          <td class="monospace">5FF03C4431EA71B3</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-07-06_20-03-02.rsrec" target="_blank">2022-07-06_20-03-02.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/zKYKdBrgWCk"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
     </table>
+  
 </div>
     
     
@@ -576,758 +873,1175 @@
         <h3><div>Other runs</div></h3>
         
         <div class="leaderboard">
+  
+  
     <table class="replay-table">
+      <tr>
+        
+        <th>Player</th>
+        <th>Date</th>
+        <!--th>Team Name</th-->
+        <th>Result</th>
+        <th class="align-right hidden">Money</th>
+        <th class="align-right hidden">Inv. Value</th>
+        <th class="align-right">Score</th>
+        <th class="align-right">Turns</th>
+        <th class="align-right">Time</th>
+        <th>Team</th>
+        
+        <th>Version</th>
+        <th>Seed</th>
+        <th>Replay</th>
+        <!--th>Notes</th-->
+      </tr>
+      
+
+      
         <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2023-01-22</td>
+          <!--td>The FireRed</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">29333</td>
+          <td class="align-right hidden">11300</td>
+          <td class="align-right">40633</td>
+          <td class="align-right">10538</td>
+          <td class="align-right">
+            -:--:--
             
-            <th>Player</th>
-            <th>Date</th>
-            <!--th>Team Name</th-->
-            <th>Result</th>
-            <th class="align-right hidden">Money</th>
-            <th class="align-right hidden">Inv. Value</th>
-            <th class="align-right">Score</th>
-            <th class="align-right">Turns</th>
-            <th class="align-right">Time</th>
-            <th>Team</th>
+          </td>
+          <td class="team-cell">
+            <h5>The FireRed</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/ditto.png"
+                    alt="Ditto"
+                    title="Ditto"
+                    class="portrait">
+                  <figcaption>Ditto</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption> Charizard</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/flygon.png"
+                    alt="Flygon"
+                    title="Flygon"
+                    class="portrait">
+                  <figcaption> Flygon</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
             
-            <th>Version</th>
-            <th>Seed</th>
-            <th>Replay</th>
-            <!--th>Notes</th-->
+              v0.6.8
+            
+
+          </td>
+          <td class="monospace">61FF94B873AD480B</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2023-01-15_17-35-31.rsrec" target="_blank">2023-01-15_17-35-31.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
         </tr>
-        
-        
-        
-            <tr>
-                
-                <td class="player-cell">Xindage</td>
-                <td>2023-01-22</td>
-                <!--td>The FireRed</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">29333</td>
-                <td class="align-right hidden">11300</td>
-                <td class="align-right">40633</td>
-                <td class="align-right">10538</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>The FireRed</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/ditto.png" alt="Ditto" title="Ditto" class="portrait">
-                                <figcaption>Ditto</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption> Charizard</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/flygon.png" alt="Flygon" title="Flygon" class="portrait">
-                                <figcaption> Flygon</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.8
-                    
+      
+        <tr>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2023-01-06</td>
+          <!--td>The Great Encounters</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">25819</td>
+          <td class="align-right hidden">9865</td>
+          <td class="align-right">35684</td>
+          <td class="align-right">9634</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>The Great Encounters</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/lucario-shiny.png"
+                    alt="Lucario"
+                    title="Lucario"
+                    class="portrait">
+                  <figcaption>Lucario</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.8
+            
 
-                </td>
-                <td class="monospace">61FF94B873AD480B</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2023-01-15_17-35-31.rsrec" target="_blank">2023-01-15_17-35-31.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Trio-</td>
-                <td>2023-01-06</td>
-                <!--td>The Great Encounters</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">25819</td>
-                <td class="align-right hidden">9865</td>
-                <td class="align-right">35684</td>
-                <td class="align-right">9634</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>The Great Encounters</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/lucario-shiny.png" alt="Lucario" title="Lucario" class="portrait">
-                                <figcaption>Lucario</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.8
-                    
+          </td>
+          <td class="monospace">CCAC5EE2FE216FA5</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2023-01-04_21-30-54.rsrec" target="_blank">2023-01-04_21-30-54.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/jaPBQO1kOLM"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2022-12-29</td>
+          <!--td>Team Diamond</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">29611</td>
+          <td class="align-right hidden">5144</td>
+          <td class="align-right">34755</td>
+          <td class="align-right">9108</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Diamond</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption>Charizard</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/sylveon.png"
+                    alt="Sylveon"
+                    title="Sylveon"
+                    class="portrait">
+                  <figcaption> Sylveon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/misdreavus.png"
+                    alt="Misdreavus"
+                    title="Misdreavus"
+                    class="portrait">
+                  <figcaption> Misdreavus</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/lumineon.png"
+                    alt="Lumineon"
+                    title="Lumineon"
+                    class="portrait">
+                  <figcaption> Lumineon</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.7
+            
 
-                </td>
-                <td class="monospace">CCAC5EE2FE216FA5</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2023-01-04_21-30-54.rsrec" target="_blank">2023-01-04_21-30-54.rsrec</a>
-                    <br><a href="https://youtu.be/jaPBQO1kOLM" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Xindage</td>
-                <td>2022-12-29</td>
-                <!--td>Team Diamond</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">29611</td>
-                <td class="align-right hidden">5144</td>
-                <td class="align-right">34755</td>
-                <td class="align-right">9108</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Diamond</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption>Charizard</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/sylveon.png" alt="Sylveon" title="Sylveon" class="portrait">
-                                <figcaption> Sylveon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/misdreavus.png" alt="Misdreavus" title="Misdreavus" class="portrait">
-                                <figcaption> Misdreavus</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/lumineon.png" alt="Lumineon" title="Lumineon" class="portrait">
-                                <figcaption> Lumineon</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.7
-                    
+          </td>
+          <td class="monospace">E9DE16475A4C28F9</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-12-29_09-30-57.rsrec" target="_blank">2022-12-29_09-30-57.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2022-11-11</td>
+          <!--td>Majestic Dawn</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">23158</td>
+          <td class="align-right hidden">9550</td>
+          <td class="align-right">32708</td>
+          <td class="align-right">9858</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Majestic Dawn</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/drapion-shiny.png"
+                    alt="Drapion"
+                    title="Drapion"
+                    class="portrait">
+                  <figcaption>Drapion</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/clefairy.png"
+                    alt="Clefairy"
+                    title="Clefairy"
+                    class="portrait">
+                  <figcaption> Clefairy</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/magcargo.png"
+                    alt="Magcargo"
+                    title="Magcargo"
+                    class="portrait">
+                  <figcaption> Magcargo</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.5
+            
 
-                </td>
-                <td class="monospace">E9DE16475A4C28F9</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-12-29_09-30-57.rsrec" target="_blank">2022-12-29_09-30-57.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Xindage</td>
-                <td>2022-11-11</td>
-                <!--td>Majestic Dawn</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">23158</td>
-                <td class="align-right hidden">9550</td>
-                <td class="align-right">32708</td>
-                <td class="align-right">9858</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Majestic Dawn</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/drapion-shiny.png" alt="Drapion" title="Drapion" class="portrait">
-                                <figcaption>Drapion</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/clefairy.png" alt="Clefairy" title="Clefairy" class="portrait">
-                                <figcaption> Clefairy</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/magcargo.png" alt="Magcargo" title="Magcargo" class="portrait">
-                                <figcaption> Magcargo</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.5
-                    
+          </td>
+          <td class="monospace">24C06174DDCD427</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-11-09_12-51-05.rsrec" target="_blank">2022-11-09_12-51-05.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2022-12-25</td>
+          <!--td>Duo</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">9695</td>
+          <td class="align-right hidden">7935</td>
+          <td class="align-right">17630</td>
+          <td class="align-right">9162</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Duo</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/lucario-shiny.png"
+                    alt="Lucario"
+                    title="Lucario"
+                    class="portrait">
+                  <figcaption>Lux</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vulpix.png"
+                    alt="Vulpix"
+                    title="Vulpix"
+                    class="portrait">
+                  <figcaption> Vulpix</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.7
+            
 
-                </td>
-                <td class="monospace">24C06174DDCD427</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-11-09_12-51-05.rsrec" target="_blank">2022-11-09_12-51-05.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Trio-</td>
-                <td>2022-12-25</td>
-                <!--td>Duo</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">9695</td>
-                <td class="align-right hidden">7935</td>
-                <td class="align-right">17630</td>
-                <td class="align-right">9162</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Duo</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/lucario-shiny.png" alt="Lucario" title="Lucario" class="portrait">
-                                <figcaption>Lux</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vulpix.png" alt="Vulpix" title="Vulpix" class="portrait">
-                                <figcaption> Vulpix</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.7
-                    
+          </td>
+          <td class="monospace">75E3EAE92BBC4093</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-12-24_23-52-28.rsrec" target="_blank">2022-12-24_23-52-28.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Shitpost Sunkern</td>
+          <td>2020-10-04</td>
+          <!--td>Team Turtle</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">9575</td>
+          <td class="align-right hidden">6670</td>
+          <td class="align-right">16245</td>
+          <td class="align-right">8665</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Turtle</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/blastoise.png"
+                    alt="Blastoise"
+                    title="Blastoise"
+                    class="portrait">
+                  <figcaption>Tortue</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/feraligatr.png"
+                    alt="Feraligatr"
+                    title="Feraligatr"
+                    class="portrait">
+                  <figcaption> Snapper</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vibrava.png"
+                    alt="Vibrava"
+                    title="Vibrava"
+                    class="portrait">
+                  <figcaption> Terrapin</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/claydol.png"
+                    alt="Claydol"
+                    title="Claydol"
+                    class="portrait">
+                  <figcaption> Toytle</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.2.1
+            
 
-                </td>
-                <td class="monospace">75E3EAE92BBC4093</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-12-24_23-52-28.rsrec" target="_blank">2022-12-24_23-52-28.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Shitpost Sunkern</td>
-                <td>2020-10-04</td>
-                <!--td>Team Turtle</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">9575</td>
-                <td class="align-right hidden">6670</td>
-                <td class="align-right">16245</td>
-                <td class="align-right">8665</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Turtle</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/blastoise.png" alt="Blastoise" title="Blastoise" class="portrait">
-                                <figcaption>Tortue</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/feraligatr.png" alt="Feraligatr" title="Feraligatr" class="portrait">
-                                <figcaption> Snapper</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vibrava.png" alt="Vibrava" title="Vibrava" class="portrait">
-                                <figcaption> Terrapin</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/claydol.png" alt="Claydol" title="Claydol" class="portrait">
-                                <figcaption> Toytle</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.2.1
-                    
+          </td>
+          <td class="monospace">F5687D31074A9786</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2020-10-03_18-04-07.rsrec" target="_blank">2020-10-03_18-04-07.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/iqM9tece8Bk"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Shitpost Sunkern</td>
+          <td>2020-12-24</td>
+          <!--td>Team Starlight</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">10957</td>
+          <td class="align-right hidden">5060</td>
+          <td class="align-right">16017</td>
+          <td class="align-right">7878</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Starlight</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/staraptor-female.png"
+                    alt="Staraptor"
+                    title="Staraptor"
+                    class="portrait">
+                  <figcaption>Étoile</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/luxray.png"
+                    alt="Luxray"
+                    title="Luxray"
+                    class="portrait">
+                  <figcaption> Magnetar</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/honchkrow.png"
+                    alt="Honchkrow"
+                    title="Honchkrow"
+                    class="portrait">
+                  <figcaption> Schwarzschild</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/claydol.png"
+                    alt="Claydol"
+                    title="Claydol"
+                    class="portrait">
+                  <figcaption> Astrolabe</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.2.7.1
+            
 
-                </td>
-                <td class="monospace">F5687D31074A9786</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2020-10-03_18-04-07.rsrec" target="_blank">2020-10-03_18-04-07.rsrec</a>
-                    <br><a href="https://youtu.be/iqM9tece8Bk" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Shitpost Sunkern</td>
-                <td>2020-12-24</td>
-                <!--td>Team Starlight</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">10957</td>
-                <td class="align-right hidden">5060</td>
-                <td class="align-right">16017</td>
-                <td class="align-right">7878</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Starlight</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/staraptor-female.png" alt="Staraptor" title="Staraptor" class="portrait">
-                                <figcaption>Étoile</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/luxray.png" alt="Luxray" title="Luxray" class="portrait">
-                                <figcaption> Magnetar</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/honchkrow.png" alt="Honchkrow" title="Honchkrow" class="portrait">
-                                <figcaption> Schwarzschild</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/claydol.png" alt="Claydol" title="Claydol" class="portrait">
-                                <figcaption> Astrolabe</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.2.7.1
-                    
+          </td>
+          <td class="monospace">C264314218D14EB6</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2020-12-12_21-19-33.rsrec" target="_blank">2020-12-12_21-19-33.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/7uAGyuTZkro"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Shitpost Sunkern</td>
+          <td>2021-03-03</td>
+          <!--td>Koridai Crusaders</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">9748</td>
+          <td class="align-right hidden">2866</td>
+          <td class="align-right">12614</td>
+          <td class="align-right">9650</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Koridai Crusaders</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/kecleon.png"
+                    alt="Kecleon"
+                    title="Kecleon"
+                    class="portrait">
+                  <figcaption>Morshu</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/honchkrow.png"
+                    alt="Honchkrow"
+                    title="Honchkrow"
+                    class="portrait">
+                  <figcaption> Suprena</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/luxray.png"
+                    alt="Luxray"
+                    title="Luxray"
+                    class="portrait">
+                  <figcaption> Horgum</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/feraligatr.png"
+                    alt="Feraligatr"
+                    title="Feraligatr"
+                    class="portrait">
+                  <figcaption> Anutu</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.2.10
+            
 
-                </td>
-                <td class="monospace">C264314218D14EB6</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2020-12-12_21-19-33.rsrec" target="_blank">2020-12-12_21-19-33.rsrec</a>
-                    <br><a href="https://youtu.be/7uAGyuTZkro" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Shitpost Sunkern</td>
-                <td>2021-03-03</td>
-                <!--td>Koridai Crusaders</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">9748</td>
-                <td class="align-right hidden">2866</td>
-                <td class="align-right">12614</td>
-                <td class="align-right">9650</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Koridai Crusaders</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/kecleon.png" alt="Kecleon" title="Kecleon" class="portrait">
-                                <figcaption>Morshu</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/honchkrow.png" alt="Honchkrow" title="Honchkrow" class="portrait">
-                                <figcaption> Suprena</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/luxray.png" alt="Luxray" title="Luxray" class="portrait">
-                                <figcaption> Horgum</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/feraligatr.png" alt="Feraligatr" title="Feraligatr" class="portrait">
-                                <figcaption> Anutu</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.2.10
-                    
+          </td>
+          <td class="monospace">585DEFA6609ABC20</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2021-03-02_13-51-36.rsrec" target="_blank">2021-03-02_13-51-36.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/A74w28RZJ0s"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2023-02-09</td>
+          <!--td>Rising Rivals</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 30 pts">
+                  30F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">2460</td>
+          <td class="align-right hidden">2989</td>
+          <td class="align-right">5449</td>
+          <td class="align-right">5891</td>
+          <td class="align-right">
+            
+              0:45:33
+          </td>
+          <td class="team-cell">
+            <h5>Rising Rivals</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/lucario.png"
+                    alt="Lucario"
+                    title="Lucario"
+                    class="portrait">
+                  <figcaption>Lucario</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.6.9
+            
 
-                </td>
-                <td class="monospace">585DEFA6609ABC20</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2021-03-02_13-51-36.rsrec" target="_blank">2021-03-02_13-51-36.rsrec</a>
-                    <br><a href="https://youtu.be/A74w28RZJ0s" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">B3DF128571353DD0</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2023-02-09_22-34-02.rsrec" target="_blank">2023-02-09_22-34-02.rsrec</a>
+            
+            
+          </td>
+          <!--td>Must select "Yes" at the "...are you sure?" prompt. Speedrun.</td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">2tousent</td>
+          <td>2022-03-21</td>
+          <!--td>Doom Desire</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">Trio-</td>
-                <td>2023-02-09</td>
-                <!--td>Rising Rivals</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 30 pts">30F</span>
-                </td>
-                <td class="align-right hidden">2460</td>
-                <td class="align-right hidden">2989</td>
-                <td class="align-right">5449</td>
-                <td class="align-right">5891</td>
-                <td class="align-right">0:45:33</td>
-                <td class="team-cell">
-                    <h5>Rising Rivals</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/lucario.png" alt="Lucario" title="Lucario" class="portrait">
-                                <figcaption>Lucario</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.6.9
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 27 pts">
+                  27F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">9614</td>
+          <td class="align-right hidden">8032</td>
+          <td class="align-right">17646</td>
+          <td class="align-right">8614</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Doom Desire</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/empoleon.png"
+                    alt="Empoleon"
+                    title="Empoleon"
+                    class="portrait">
+                  <figcaption>Empoleon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/lucario.png"
+                    alt="Lucario"
+                    title="Lucario"
+                    class="portrait">
+                  <figcaption> Lucario</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/bronzong.png"
+                    alt="Bronzong"
+                    title="Bronzong"
+                    class="portrait">
+                  <figcaption> Bronzong</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.9
+            
 
-                </td>
-                <td class="monospace">B3DF128571353DD0</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2023-02-09_22-34-02.rsrec" target="_blank">2023-02-09_22-34-02.rsrec</a>
-                    
-                </td>
-                <!--td>Must select "Yes" at the "...are you sure?" prompt. Speedrun.</td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">1B6DA0F531226A8E</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-21_23-52-07.rsrec" target="_blank">2022-03-21_23-52-07.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2022-03-20</td>
+          <!--td>The Noble Victory</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">2tousent</td>
-                <td>2022-03-21</td>
-                <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 27 pts">27F</span>
-                </td>
-                <td class="align-right hidden">9614</td>
-                <td class="align-right hidden">8032</td>
-                <td class="align-right">17646</td>
-                <td class="align-right">8614</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Doom Desire</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/empoleon.png" alt="Empoleon" title="Empoleon" class="portrait">
-                                <figcaption>Empoleon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/lucario.png" alt="Lucario" title="Lucario" class="portrait">
-                                <figcaption> Lucario</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/bronzong.png" alt="Bronzong" title="Bronzong" class="portrait">
-                                <figcaption> Bronzong</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.9
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 25 pts">
+                  25F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">16566</td>
+          <td class="align-right hidden">7210</td>
+          <td class="align-right">23776</td>
+          <td class="align-right">5816</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>The Noble Victory</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/magcargo.png"
+                    alt="Magcargo"
+                    title="Magcargo"
+                    class="portrait">
+                  <figcaption>Magcargo</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/lumineon-female.png"
+                    alt="Lumineon"
+                    title="Lumineon"
+                    class="portrait">
+                  <figcaption> Lumineon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/murkrow-female.png"
+                    alt="Murkrow"
+                    title="Murkrow"
+                    class="portrait">
+                  <figcaption> Murkrow</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.8
+            
 
-                </td>
-                <td class="monospace">1B6DA0F531226A8E</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-21_23-52-07.rsrec" target="_blank">2022-03-21_23-52-07.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">DE05560875313ECD</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-19_12-08-12_1.rsrec" target="_blank">2022-03-19_12-08-12_1.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">2tousent</td>
+          <td>2022-03-25</td>
+          <!--td>Doom Desire</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">Xindage</td>
-                <td>2022-03-20</td>
-                <!--td>The Noble Victory</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 25 pts">25F</span>
-                </td>
-                <td class="align-right hidden">16566</td>
-                <td class="align-right hidden">7210</td>
-                <td class="align-right">23776</td>
-                <td class="align-right">5816</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>The Noble Victory</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/magcargo.png" alt="Magcargo" title="Magcargo" class="portrait">
-                                <figcaption>Magcargo</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/lumineon-female.png" alt="Lumineon" title="Lumineon" class="portrait">
-                                <figcaption> Lumineon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/murkrow-female.png" alt="Murkrow" title="Murkrow" class="portrait">
-                                <figcaption> Murkrow</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.8
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 21 pts">
+                  21F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">6097</td>
+          <td class="align-right hidden">1476</td>
+          <td class="align-right">7573</td>
+          <td class="align-right">7575</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Doom Desire</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/nidoking.png"
+                    alt="Nidoking"
+                    title="Nidoking"
+                    class="portrait">
+                  <figcaption>2tousent</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vee</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/hariyama.png"
+                    alt="Hariyama"
+                    title="Hariyama"
+                    class="portrait">
+                  <figcaption> Sumoh</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.9
+            
 
-                </td>
-                <td class="monospace">DE05560875313ECD</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-19_12-08-12_1.rsrec" target="_blank">2022-03-19_12-08-12_1.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">0F574B3A8176835D</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-25_17-29-23.rsrec" target="_blank">2022-03-25_17-29-23.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">2tousent</td>
+          <td>2022-03-20</td>
+          <!--td>Doom Desire</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">2tousent</td>
-                <td>2022-03-25</td>
-                <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 21 pts">21F</span>
-                </td>
-                <td class="align-right hidden">6097</td>
-                <td class="align-right hidden">1476</td>
-                <td class="align-right">7573</td>
-                <td class="align-right">7575</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Doom Desire</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/nidoking.png" alt="Nidoking" title="Nidoking" class="portrait">
-                                <figcaption>2tousent</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vee</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/hariyama.png" alt="Hariyama" title="Hariyama" class="portrait">
-                                <figcaption> Sumoh</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.9
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 19 pts">
+                  19F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">5658</td>
+          <td class="align-right hidden">3565</td>
+          <td class="align-right">9223</td>
+          <td class="align-right">5915</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Doom Desire</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/nidoking.png"
+                    alt="Nidoking"
+                    title="Nidoking"
+                    class="portrait">
+                  <figcaption>2tousent</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/raticate.png"
+                    alt="Raticate"
+                    title="Raticate"
+                    class="portrait">
+                  <figcaption> Raticate</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/finneon.png"
+                    alt="Finneon"
+                    title="Finneon"
+                    class="portrait">
+                  <figcaption> Finneon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/bronzor.png"
+                    alt="Bronzor"
+                    title="Bronzor"
+                    class="portrait">
+                  <figcaption> Bronzor</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.8
+            
 
-                </td>
-                <td class="monospace">0F574B3A8176835D</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-25_17-29-23.rsrec" target="_blank">2022-03-25_17-29-23.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">C7039A03574BCE5B</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-03-20_14-48-18.rsrec" target="_blank">2022-03-20_14-48-18.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Obscured</td>
+          <td>2022-07-04</td>
+          <!--td>Team Magma</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">2tousent</td>
-                <td>2022-03-20</td>
-                <!--td>Doom Desire</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 19 pts">19F</span>
-                </td>
-                <td class="align-right hidden">5658</td>
-                <td class="align-right hidden">3565</td>
-                <td class="align-right">9223</td>
-                <td class="align-right">5915</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Doom Desire</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/nidoking.png" alt="Nidoking" title="Nidoking" class="portrait">
-                                <figcaption>2tousent</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/raticate.png" alt="Raticate" title="Raticate" class="portrait">
-                                <figcaption> Raticate</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/finneon.png" alt="Finneon" title="Finneon" class="portrait">
-                                <figcaption> Finneon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/bronzor.png" alt="Bronzor" title="Bronzor" class="portrait">
-                                <figcaption> Bronzor</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.8
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 13 pts">
+                  13F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">3180</td>
+          <td class="align-right hidden">11645</td>
+          <td class="align-right">14825</td>
+          <td class="align-right">4087</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Magma</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/sylveon.png"
+                    alt="Sylveon"
+                    title="Sylveon"
+                    class="portrait">
+                  <figcaption>Sylveon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/luxio.png"
+                    alt="Luxio"
+                    title="Luxio"
+                    class="portrait">
+                  <figcaption> Luxio</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/houndour.png"
+                    alt="Houndour"
+                    title="Houndour"
+                    class="portrait">
+                  <figcaption> Houndour</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/eevee.png"
+                    alt="Eevee"
+                    title="Eevee"
+                    class="portrait">
+                  <figcaption> Eevee</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.4
+            
 
-                </td>
-                <td class="monospace">C7039A03574BCE5B</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-03-20_14-48-18.rsrec" target="_blank">2022-03-20_14-48-18.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">A6D874A3029ADBB5</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-07-04_22-51-40.rsrec" target="_blank">2022-07-04_22-51-40.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/VeWeEnZxuWQ"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Obscured</td>
+          <td>2022-07-05</td>
+          <!--td>Team Gym Heroes</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">Obscured</td>
-                <td>2022-07-04</td>
-                <!--td>Team Magma</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 13 pts">13F</span>
-                </td>
-                <td class="align-right hidden">3180</td>
-                <td class="align-right hidden">11645</td>
-                <td class="align-right">14825</td>
-                <td class="align-right">4087</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Magma</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/sylveon.png" alt="Sylveon" title="Sylveon" class="portrait">
-                                <figcaption>Sylveon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/luxio.png" alt="Luxio" title="Luxio" class="portrait">
-                                <figcaption> Luxio</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/houndour.png" alt="Houndour" title="Houndour" class="portrait">
-                                <figcaption> Houndour</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/eevee.png" alt="Eevee" title="Eevee" class="portrait">
-                                <figcaption> Eevee</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.4
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 13 pts">
+                  13F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">2592</td>
+          <td class="align-right hidden">3805</td>
+          <td class="align-right">6397</td>
+          <td class="align-right">3370</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Gym Heroes</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/staravia-female.png"
+                    alt="Staravia"
+                    title="Staravia"
+                    class="portrait">
+                  <figcaption>Staravia</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/luxio.png"
+                    alt="Luxio"
+                    title="Luxio"
+                    class="portrait">
+                  <figcaption> Luxio</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/larvitar.png"
+                    alt="Larvitar"
+                    title="Larvitar"
+                    class="portrait">
+                  <figcaption> Larvitar</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/drowzee.png"
+                    alt="Drowzee"
+                    title="Drowzee"
+                    class="portrait">
+                  <figcaption> Drowzee</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.4
+            
 
-                </td>
-                <td class="monospace">A6D874A3029ADBB5</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-07-04_22-51-40.rsrec" target="_blank">2022-07-04_22-51-40.rsrec</a>
-                    <br><a href="https://youtu.be/VeWeEnZxuWQ" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">DDBF0B2100BE2D1A</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-07-05_22-23-48.rsrec" target="_blank">2022-07-05_22-23-48.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2022-02-09</td>
+          <!--td>Team Skyridge</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">Obscured</td>
-                <td>2022-07-05</td>
-                <!--td>Team Gym Heroes</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 13 pts">13F</span>
-                </td>
-                <td class="align-right hidden">2592</td>
-                <td class="align-right hidden">3805</td>
-                <td class="align-right">6397</td>
-                <td class="align-right">3370</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Gym Heroes</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/staravia-female.png" alt="Staravia" title="Staravia" class="portrait">
-                                <figcaption>Staravia</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/luxio.png" alt="Luxio" title="Luxio" class="portrait">
-                                <figcaption> Luxio</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/larvitar.png" alt="Larvitar" title="Larvitar" class="portrait">
-                                <figcaption> Larvitar</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/drowzee.png" alt="Drowzee" title="Drowzee" class="portrait">
-                                <figcaption> Drowzee</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.4
-                    
+                Gave up</span><br>
+              <span class="floor" title="Depth: 10 pts">
+                  10F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">2694</td>
+          <td class="align-right hidden">2411</td>
+          <td class="align-right">5105</td>
+          <td class="align-right">2539</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Skyridge</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/alolan-vulpix.png"
+                    alt="Alolan Vulpix"
+                    title="Alolan Vulpix"
+                    class="portrait">
+                  <figcaption>Vulpix</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/eevee.png"
+                    alt="Eevee"
+                    title="Eevee"
+                    class="portrait">
+                  <figcaption> Eevee</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/swinub.png"
+                    alt="Swinub"
+                    title="Swinub"
+                    class="portrait">
+                  <figcaption> Swinub</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.7
+            
 
-                </td>
-                <td class="monospace">DDBF0B2100BE2D1A</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-07-05_22-23-48.rsrec" target="_blank">2022-07-05_22-23-48.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+          </td>
+          <td class="monospace">DEC46463114B9B50</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-02-09_22-42-32.rsrec" target="_blank">2022-02-09_22-42-32.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Obscured</td>
+          <td>2022-06-29</td>
+          <!--td>Galactic Conquest</td-->
+          <td class="result-cell">
+                <span class="result">
                 
-                <td class="player-cell">Xindage</td>
-                <td>2022-02-09</td>
-                <!--td>Team Skyridge</td-->
-                <td class="result-cell"><span class="result">Gave up</span><br>
-                    <span class="floor" title="Depth: 10 pts">10F</span>
-                </td>
-                <td class="align-right hidden">2694</td>
-                <td class="align-right hidden">2411</td>
-                <td class="align-right">5105</td>
-                <td class="align-right">2539</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Skyridge</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/alolan-vulpix.png" alt="Alolan Vulpix" title="Alolan Vulpix" class="portrait">
-                                <figcaption>Vulpix</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/eevee.png" alt="Eevee" title="Eevee" class="portrait">
-                                <figcaption> Eevee</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/swinub.png" alt="Swinub" title="Swinub" class="portrait">
-                                <figcaption> Swinub</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.7
-                    
+                Defeated</span><br>
+              <span class="floor" title="Depth: 9 pts">
+                  9F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">1101</td>
+          <td class="align-right hidden">6790</td>
+          <td class="align-right">7891</td>
+          <td class="align-right">2209</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Galactic Conquest</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/luxio.png"
+                    alt="Luxio"
+                    title="Luxio"
+                    class="portrait">
+                  <figcaption>Luxio</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/eevee.png"
+                    alt="Eevee"
+                    title="Eevee"
+                    class="portrait">
+                  <figcaption> Eevee</figcaption>
+                </figure></div>
+          </td>
+          
+          <td>
+            
+              v0.5.4
+            
 
-                </td>
-                <td class="monospace">DEC46463114B9B50</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-02-09_22-42-32.rsrec" target="_blank">2022-02-09_22-42-32.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                
-                <td class="player-cell">Obscured</td>
-                <td>2022-06-29</td>
-                <!--td>Galactic Conquest</td-->
-                <td class="result-cell"><span class="result">Defeated</span><br>
-                    <span class="floor" title="Depth: 9 pts">9F</span>
-                </td>
-                <td class="align-right hidden">1101</td>
-                <td class="align-right hidden">6790</td>
-                <td class="align-right">7891</td>
-                <td class="align-right">2209</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Galactic Conquest</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/luxio.png" alt="Luxio" title="Luxio" class="portrait">
-                                <figcaption>Luxio</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/eevee.png" alt="Eevee" title="Eevee" class="portrait">
-                                <figcaption> Eevee</figcaption>
-                            </figure></div>
-                </td>
-                
-                <td>
-                    
-                        v0.5.4
-                    
-
-                </td>
-                <td class="monospace">0D2C0CAD955E69B3</td>
-                <td>
-                    <a href="/replays/guildmaster-trail-roguelocke/2022-06-29_12-40-54.rsrec" target="_blank">2022-06-29_12-40-54.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
+          </td>
+          <td class="monospace">0D2C0CAD955E69B3</td>
+          <td>
+            
+              <a href="/replays/guildmaster-trail-roguelocke/2022-06-29_12-40-54.rsrec" target="_blank">2022-06-29_12-40-54.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
     </table>
+  
 </div>
 
     

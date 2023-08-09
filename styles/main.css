@@ -127,6 +127,8 @@ body.theme-sickly-hollow { --text-color: black; --fg-color-light1: #f7e6ff; --fg
 
 body.theme-secret-garden { --text-color: black; --fg-color-light1: #f9fff0; --fg-color-light2: #bd7; --fg-color-dark1: #690; --fg-color-dark2: #360; --fg-color-dark3: rgba(16, 32, 0, 0.5); --bg-color-1: rgb(199, 249, 255); --bg-color-2: rgb(110, 219, 252); --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
 
+body.theme-castaway-cave { --text-color: black; --fg-color-light1: #cef; --fg-color-light2: rgb(241, 223, 160); --fg-color-dark1: #069; --fg-color-dark2: #036; --fg-color-dark3: rgba(0, 16, 32, 0.5); --bg-color-1: rgb(18, 176, 208); --bg-color-2: rgb(6, 96, 174); --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
+
 body.theme-wish-cave { --text-color: black; --fg-color-light1: #fee9e1; --fg-color-light2: #f7de94; --fg-color-dark1: #de9c73; --fg-color-dark2: #c67b42; --fg-color-dark3: rgba(8, 49, 12, 0.75); --bg-color-1: #188c73; --bg-color-2: #003908; --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
 
 body.theme-joyous-tower { --text-color: black; --fg-color-light1: #f8fefe; --fg-color-light2: #cedede; --fg-color-dark1: #8cadbd; --fg-color-dark2: #6b7b84; --fg-color-dark3: rgba(37, 45, 45, 0.5); --bg-color-1: #bd738c; --bg-color-2: #9c4a4a; --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }

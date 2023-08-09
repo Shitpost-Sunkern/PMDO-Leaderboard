@@ -53,6 +53,8 @@
                     
                         <option value="/leaderboards/PMDO/secret-garden-roguelocke.html" >Secret Garden - Roguelocke</option>
                     
+                        <option value="/leaderboards/PMDO/castaway-cave-roguelocke.html" >Castaway Cave - Roguelocke</option>
+                    
                 </optgroup>
             
         
@@ -86,7 +88,7 @@
 <script>
     document.getElementById('modal-info').onclick = function() {
       Modal.open({
-        content: "<h4>Sickly Hollow Info</h4><ul>            <li>Objective: Clear Sickly Hollow on B17F.</li>            <li>B17F is a treasure room containing a treasure box and a second one behind a locked door.</li>            <li>Set level: Lv.25</li>            <li>No. starting items: 16</li>            <li>Max party size: 3</li>            <li>This dungeon is unlocked by clearing Bramble Thicket, which can be accessed from the side path in Bramble Woods.</li>    </ul><h5>Depth scoring</h5><table class='depth-rubric'>            <tr><th>Floor</th><th>Depth points</th></tr>                    <tr>                <td>B1F</td>                <td>1 pts</td>            </tr>                    <tr>                <td>B2F</td>                <td>2 pts</td>            </tr>                    <tr>                <td>B3F</td>                <td>3 pts</td>            </tr>                    <tr>                <td>B4F</td>                <td>4 pts</td>            </tr>                    <tr>                <td>B5F</td>                <td>5 pts</td>            </tr>                    <tr>                <td>B6F</td>                <td>6 pts</td>            </tr>                    <tr>                <td>B7F</td>                <td>7 pts</td>            </tr>                    <tr>                <td>B8F</td>                <td>8 pts</td>            </tr>                    <tr>                <td>B9F</td>                <td>9 pts</td>            </tr>                    <tr>                <td>B10F</td>                <td>10 pts</td>            </tr>                    <tr>                <td>B11F</td>                <td>11 pts</td>            </tr>                    <tr>                <td>B12F</td>                <td>12 pts</td>            </tr>                    <tr>                <td>B13F</td>                <td>13 pts</td>            </tr>                    <tr>                <td>B14F</td>                <td>14 pts</td>            </tr>                    <tr>                <td>B15F</td>                <td>15 pts</td>            </tr>                    <tr>                <td>B16F</td>                <td>16 pts</td>            </tr>                    <tr>                <td>B17F</td>                <td>17 pts</td>            </tr>            </table>",
+        content: "<h4>Sickly Hollow Info</h4><ul>            <li>Objective: Clear Sickly Hollow on B17F.</li>            <li>B17F is a treasure room containing a treasure box and a second one behind a locked door.</li>            <li>Set level: Lv.25</li>            <li>No. starting items: 16</li>            <li>Max party size: 3</li>            <li>This dungeon is unlocked by clearing Bramble Thicket, which can be accessed from the side path in Bramble Woods.</li>    </ul>",
       });
     }
 </script>
@@ -99,299 +101,538 @@
     
 
     <div class="leaderboard">
+  
+  
     <table class="replay-table">
+      <tr>
+        
+          <th class="align-right">#</th>
+        
+        <th>Player</th>
+        <th>Date</th>
+        <!--th>Team Name</th-->
+        <th>Result</th>
+        <th class="align-right hidden">Money</th>
+        <th class="align-right hidden">Inv. Value</th>
+        <th class="align-right">Score</th>
+        <th class="align-right">Turns</th>
+        <th class="align-right">Time</th>
+        <th>Team</th>
+        
+          <th>Starting Items</th>
+        
+        <th>Version</th>
+        <th>Seed</th>
+        <th>Replay</th>
+        <!--th>Notes</th-->
+      </tr>
+      
+
+      
         <tr>
-            <th class="align-right">#</th>
-            <th>Player</th>
-            <th>Date</th>
-            <!--th>Team Name</th-->
-            <th>Result</th>
-            <th class="align-right hidden">Money</th>
-            <th class="align-right hidden">Inv. Value</th>
-            <th class="align-right">Score</th>
-            <th class="align-right">Turns</th>
-            <th class="align-right">Time</th>
-            <th>Team</th>
-            <th>Starting Items</th>
-            <th>Version</th>
-            <th>Seed</th>
-            <th>Replay</th>
-            <!--th>Notes</th-->
+          
+            <td class="align-right">1</td>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2023-07-22</td>
+          <!--td>Team Gardeners</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">10096</td>
+          <td class="align-right hidden">18350</td>
+          <td class="align-right">28446</td>
+          <td class="align-right">5492</td>
+          <td class="align-right">
+            
+              1:23:01
+          </td>
+          <td class="team-cell">
+            <h5>Team Gardeners</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/ditto.png"
+                    alt="Ditto"
+                    title="Ditto"
+                    class="portrait">
+                  <figcaption>Ditto</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/golem.png"
+                    alt="Golem"
+                    title="Golem"
+                    class="portrait">
+                  <figcaption> Beth</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/tyranitar.png"
+                    alt="Tyranitar"
+                    title="Tyranitar"
+                    class="portrait">
+                  <figcaption> Tyna</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Weather Rock</li>
+                
+                  <li> Cover Band</li>
+                
+                  <li> X-Ray Specs</li>
+                
+                  <li> Huge Apple</li>
+                
+                  <li> Leppa Berry</li>
+                
+                  <li> Key x3</li>
+                
+                  <li> Recall Box</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.7.13
+            
+
+          </td>
+          <td class="monospace">F22E6BE5A9040EE6</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/Sickly_Run_Xindage_28k.rsrec" target="_blank">Sickly_Run_Xindage_28k.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
         </tr>
-        
-        
-        
-            <tr>
-                <td class="align-right">1</td>
-                <td class="player-cell">Xindage</td>
-                <td>2023-07-22</td>
-                <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">10096</td>
-                <td class="align-right hidden">18350</td>
-                <td class="align-right">28446</td>
-                <td class="align-right">5492</td>
-                <td class="align-right">1:23:01</td>
-                <td class="team-cell">
-                    <h5>Team Gardeners</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/ditto.png" alt="Ditto" title="Ditto" class="portrait">
-                                <figcaption>Ditto</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/golem.png" alt="Golem" title="Golem" class="portrait">
-                                <figcaption> Beth</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/tyranitar.png" alt="Tyranitar" title="Tyranitar" class="portrait">
-                                <figcaption> Tyna</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Weather Rock</li><li> Cover Band</li><li> X-Ray Specs</li><li> Huge Apple</li><li> Leppa Berry</li><li> Key x3</li><li> Recall Box</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.7.13
-                    
+      
+        <tr>
+          
+            <td class="align-right">2</td>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2023-01-14</td>
+          <!--td>Spooks</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">5282</td>
+          <td class="align-right hidden">18770</td>
+          <td class="align-right">24052</td>
+          <td class="align-right">4837</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Spooks</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/lucario.png"
+                    alt="Lucario"
+                    title="Lucario"
+                    class="portrait">
+                  <figcaption>Lucario</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Valiant Rock</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.6.8
+            
 
-                </td>
-                <td class="monospace">F22E6BE5A9040EE6</td>
-                <td>
-                    <a href="/replays/sickly-hollow/Sickly_Run_Xindage_28k.rsrec" target="_blank">Sickly_Run_Xindage_28k.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">2</td>
-                <td class="player-cell">Trio-</td>
-                <td>2023-01-14</td>
-                <!--td>Spooks</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">5282</td>
-                <td class="align-right hidden">18770</td>
-                <td class="align-right">24052</td>
-                <td class="align-right">4837</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Spooks</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/lucario.png" alt="Lucario" title="Lucario" class="portrait">
-                                <figcaption>Lucario</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Valiant Rock</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.6.8
-                    
+          </td>
+          <td class="monospace">E702AD47D3F312C4</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2023-01-13_23-31-50.rsrec" target="_blank">2023-01-13_23-31-50.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/2YzP2mTmnew"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">3</td>
+          
+          <td class="player-cell">The kitchen sunk</td>
+          <td>2023-02-09</td>
+          <!--td>sdadwsdasd</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">3306</td>
+          <td class="align-right hidden">10925</td>
+          <td class="align-right">14231</td>
+          <td class="align-right">3822</td>
+          <td class="align-right">
+            
+              1:40:48
+          </td>
+          <td class="team-cell">
+            <h5>sdadwsdasd</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/staraptor-female.png"
+                    alt="Staraptor"
+                    title="Staraptor"
+                    class="portrait">
+                  <figcaption>Staraptor</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/gligar.png"
+                    alt="Gligar"
+                    title="Gligar"
+                    class="portrait">
+                  <figcaption> Gligar</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/nidorino.png"
+                    alt="Nidorino"
+                    title="Nidorino"
+                    class="portrait">
+                  <figcaption> Nidorino</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Cover Band</li>
+                
+                  <li> Leppa Berry x2</li>
+                
+                  <li> Lum Berry x2</li>
+                
+                  <li> Oran Berry x2</li>
+                
+                  <li> Blast Seed</li>
+                
+                  <li> Ice Seed</li>
+                
+                  <li> Gravelerock x9</li>
+                
+                  <li> Pounce Wand x3</li>
+                
+                  <li> Warp Wand x4</li>
+                
+                  <li> All Protect Orb</li>
+                
+                  <li> Escape Orb</li>
+                
+                  <li> Revival Orb</li>
+                
+                  <li> Slumber Orb</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.6.9
+            
 
-                </td>
-                <td class="monospace">E702AD47D3F312C4</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2023-01-13_23-31-50.rsrec" target="_blank">2023-01-13_23-31-50.rsrec</a>
-                    <br><a href="https://youtu.be/2YzP2mTmnew" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">3</td>
-                <td class="player-cell">The kitchen sunk</td>
-                <td>2023-02-09</td>
-                <!--td>sdadwsdasd</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">3306</td>
-                <td class="align-right hidden">10925</td>
-                <td class="align-right">14231</td>
-                <td class="align-right">3822</td>
-                <td class="align-right">1:40:48</td>
-                <td class="team-cell">
-                    <h5>sdadwsdasd</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/staraptor-female.png" alt="Staraptor" title="Staraptor" class="portrait">
-                                <figcaption>Staraptor</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/gligar.png" alt="Gligar" title="Gligar" class="portrait">
-                                <figcaption> Gligar</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/nidorino.png" alt="Nidorino" title="Nidorino" class="portrait">
-                                <figcaption> Nidorino</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Cover Band</li><li> Leppa Berry x2</li><li> Lum Berry x2</li><li> Oran Berry x2</li><li> Blast Seed</li><li> Ice Seed</li><li> Gravelerock x9</li><li> Pounce Wand x3</li><li> Warp Wand x4</li><li> All Protect Orb</li><li> Escape Orb</li><li> Revival Orb</li><li> Slumber Orb</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.6.9
-                    
+          </td>
+          <td class="monospace">D0A1B3A796753D56</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2023-02-09_11-23-43.rsrec" target="_blank">2023-02-09_11-23-43.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">4</td>
+          
+          <td class="player-cell">Shitpost Sunkern</td>
+          <td>2021-07-12</td>
+          <!--td>Team Sunshine</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">3137</td>
+          <td class="align-right hidden">5815</td>
+          <td class="align-right">8952</td>
+          <td class="align-right">2979</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Sunshine</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption>Sriracha</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/kecleon.png"
+                    alt="Kecleon"
+                    title="Kecleon"
+                    class="portrait">
+                  <figcaption> Morshu</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/lumineon.png"
+                    alt="Lumineon"
+                    title="Lumineon"
+                    class="portrait">
+                  <figcaption> Worcestershire</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Escape Orb</li>
+                
+                  <li> Big Apple</li>
+                
+                  <li> Oran Berry x2</li>
+                
+                  <li> Leppa Berry</li>
+                
+                  <li> Reviver Seed x3</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.3.7
+            
 
-                </td>
-                <td class="monospace">D0A1B3A796753D56</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2023-02-09_11-23-43.rsrec" target="_blank">2023-02-09_11-23-43.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">4</td>
-                <td class="player-cell">Shitpost Sunkern</td>
-                <td>2021-07-12</td>
-                <!--td>Team Sunshine</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">3137</td>
-                <td class="align-right hidden">5815</td>
-                <td class="align-right">8952</td>
-                <td class="align-right">2979</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Sunshine</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption>Sriracha</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/kecleon.png" alt="Kecleon" title="Kecleon" class="portrait">
-                                <figcaption> Morshu</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/lumineon.png" alt="Lumineon" title="Lumineon" class="portrait">
-                                <figcaption> Worcestershire</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Escape Orb</li><li> Big Apple</li><li> Oran Berry x2</li><li> Leppa Berry</li><li> Reviver Seed x3</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.3.7
-                    
+          </td>
+          <td class="monospace">D0C9FD2C0F95D5A7</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2021-06-23_13-59-41.rsrec" target="_blank">2021-06-23_13-59-41.rsrec</a>
+            
+            <br><a
+                href="https://youtu.be/9X_pjdMmhQk"
+                class="video-link"
+                target="_blank">Video</a>
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">5</td>
+          
+          <td class="player-cell">Nemo The Axolotl</td>
+          <td>2022-01-09</td>
+          <!--td>Sunshine</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">1588</td>
+          <td class="align-right hidden">6520</td>
+          <td class="align-right">8108</td>
+          <td class="align-right">2622</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Sunshine</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/charizard.png"
+                    alt="Charizard"
+                    title="Charizard"
+                    class="portrait">
+                  <figcaption>Ruby</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/clefairy.png"
+                    alt="Clefairy"
+                    title="Clefairy"
+                    class="portrait">
+                  <figcaption> Suisei</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/cherrim.png"
+                    alt="Cherrim"
+                    title="Cherrim"
+                    class="portrait">
+                  <figcaption> Lavender</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Wide Lens</li>
+                
+                  <li> Revival Orb</li>
+                
+                  <li> Warp Wand x6</li>
+                
+                  <li> Leppa Berry x3</li>
+                
+                  <li> Reviver Seed x2</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.5.5
+            
 
-                </td>
-                <td class="monospace">D0C9FD2C0F95D5A7</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2021-06-23_13-59-41.rsrec" target="_blank">2021-06-23_13-59-41.rsrec</a>
-                    <br><a href="https://youtu.be/9X_pjdMmhQk" class="video-link" target="_blank">Video</a>
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">5</td>
-                <td class="player-cell">Nemo The Axolotl</td>
-                <td>2022-01-09</td>
-                <!--td>Sunshine</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">1588</td>
-                <td class="align-right hidden">6520</td>
-                <td class="align-right">8108</td>
-                <td class="align-right">2622</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Sunshine</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/charizard.png" alt="Charizard" title="Charizard" class="portrait">
-                                <figcaption>Ruby</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/clefairy.png" alt="Clefairy" title="Clefairy" class="portrait">
-                                <figcaption> Suisei</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/cherrim.png" alt="Cherrim" title="Cherrim" class="portrait">
-                                <figcaption> Lavender</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Wide Lens</li><li> Revival Orb</li><li> Warp Wand x6</li><li> Leppa Berry x3</li><li> Reviver Seed x2</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.5.5
-                    
+          </td>
+          <td class="monospace">EDF9DE5558BA7FB8</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2022-01-09_21-44-52.rsrec" target="_blank">2022-01-09_21-44-52.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+            <td class="align-right">6</td>
+          
+          <td class="player-cell">Filthy</td>
+          <td>2022-01-30</td>
+          <!--td>Team Guildmaster</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">1456</td>
+          <td class="align-right hidden">6075</td>
+          <td class="align-right">7531</td>
+          <td class="align-right">2217</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Guildmaster</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/empoleon.png"
+                    alt="Empoleon"
+                    title="Empoleon"
+                    class="portrait">
+                  <figcaption>Regina</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/gliscor.png"
+                    alt="Gliscor"
+                    title="Gliscor"
+                    class="portrait">
+                  <figcaption> Vlademir</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/alolan-ninetales.png"
+                    alt="Alolan Ninetales"
+                    title="Alolan Ninetales"
+                    class="portrait">
+                  <figcaption> Eleanor</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Black Apricorn</li>
+                
+                  <li> Purple Apricorn</li>
+                
+                  <li> Reviver Seed x3</li>
+                
+                  <li> Leppa Berry x3</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.5.6
+            
 
-                </td>
-                <td class="monospace">EDF9DE5558BA7FB8</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2022-01-09_21-44-52.rsrec" target="_blank">2022-01-09_21-44-52.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
-                <td class="align-right">6</td>
-                <td class="player-cell">Filthy</td>
-                <td>2022-01-30</td>
-                <!--td>Team Guildmaster</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">1456</td>
-                <td class="align-right hidden">6075</td>
-                <td class="align-right">7531</td>
-                <td class="align-right">2217</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Guildmaster</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/empoleon.png" alt="Empoleon" title="Empoleon" class="portrait">
-                                <figcaption>Regina</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/gliscor.png" alt="Gliscor" title="Gliscor" class="portrait">
-                                <figcaption> Vlademir</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/alolan-ninetales.png" alt="Alolan Ninetales" title="Alolan Ninetales" class="portrait">
-                                <figcaption> Eleanor</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Black Apricorn</li><li> Purple Apricorn</li><li> Reviver Seed x3</li><li> Leppa Berry x3</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.5.6
-                    
-
-                </td>
-                <td class="monospace">CF43DC07A11AEF67</td>
-                <td>
-                    <a href="/replays/sickly-hollow/Sickly_Run.rsrec" target="_blank">Sickly_Run.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
+          </td>
+          <td class="monospace">CF43DC07A11AEF67</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/Sickly_Run.rsrec" target="_blank">Sickly_Run.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
     </table>
+  
 </div>
     
     
@@ -399,167 +640,309 @@
         <h3><div>Other runs</div></h3>
         
         <div class="leaderboard">
+  
+  
     <table class="replay-table">
+      <tr>
+        
+        <th>Player</th>
+        <th>Date</th>
+        <!--th>Team Name</th-->
+        <th>Result</th>
+        <th class="align-right hidden">Money</th>
+        <th class="align-right hidden">Inv. Value</th>
+        <th class="align-right">Score</th>
+        <th class="align-right">Turns</th>
+        <th class="align-right">Time</th>
+        <th>Team</th>
+        
+          <th>Starting Items</th>
+        
+        <th>Version</th>
+        <th>Seed</th>
+        <th>Replay</th>
+        <!--th>Notes</th-->
+      </tr>
+      
+
+      
         <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2023-02-09</td>
+          <!--td>Team Gardeners</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">6067</td>
+          <td class="align-right hidden">14260</td>
+          <td class="align-right">20327</td>
+          <td class="align-right">5618</td>
+          <td class="align-right">
             
-            <th>Player</th>
-            <th>Date</th>
-            <!--th>Team Name</th-->
-            <th>Result</th>
-            <th class="align-right hidden">Money</th>
-            <th class="align-right hidden">Inv. Value</th>
-            <th class="align-right">Score</th>
-            <th class="align-right">Turns</th>
-            <th class="align-right">Time</th>
-            <th>Team</th>
-            <th>Starting Items</th>
-            <th>Version</th>
-            <th>Seed</th>
-            <th>Replay</th>
-            <!--th>Notes</th-->
+              1:25:44
+          </td>
+          <td class="team-cell">
+            <h5>Team Gardeners</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/ditto.png"
+                    alt="Ditto"
+                    title="Ditto"
+                    class="portrait">
+                  <figcaption>Ditto</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vaporeon.png"
+                    alt="Vaporeon"
+                    title="Vaporeon"
+                    class="portrait">
+                  <figcaption> Vaporeon</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/scizor-shiny.png"
+                    alt="Scizor"
+                    title="Scizor"
+                    class="portrait">
+                  <figcaption> Lidelle</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Cover Band</li>
+                
+                  <li> X-Ray Specs</li>
+                
+                  <li> Huge Apple x2</li>
+                
+                  <li> Leppa Berry</li>
+                
+                  <li> Green Gummi</li>
+                
+                  <li> Wonder Gummi</li>
+                
+                  <li> Elixir x2</li>
+                
+                  <li> Shell Bell</li>
+                
+                  <li> Escape Orb</li>
+                
+                  <li> Recall Box</li>
+                
+                  <li> TM Aerial Ace</li>
+                
+                  <li> TM Swords Dance</li>
+                
+                  <li> Ambush Rock</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.6.9
+            
+
+          </td>
+          <td class="monospace">21BAE7782D1B87B0</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2023-02-09_20-29-47.rsrec" target="_blank">2023-02-09_20-29-47.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
         </tr>
-        
-        
-        
-            <tr>
+      
+        <tr>
+          
+          <td class="player-cell">Trio-</td>
+          <td>2022-11-28</td>
+          <!--td>Spooks</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">3016</td>
+          <td class="align-right hidden">9150</td>
+          <td class="align-right">12066</td>
+          <td class="align-right">3337</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Spooks</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/honchkrow.png"
+                    alt="Honchkrow"
+                    title="Honchkrow"
+                    class="portrait">
+                  <figcaption>Honchkrow</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/vulpix.png"
+                    alt="Vulpix"
+                    title="Vulpix"
+                    class="portrait">
+                  <figcaption> Vulpix</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/flygon.png"
+                    alt="Flygon"
+                    title="Flygon"
+                    class="portrait">
+                  <figcaption> Flygone</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
                 
-                <td class="player-cell">Xindage</td>
-                <td>2023-02-09</td>
-                <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">6067</td>
-                <td class="align-right hidden">14260</td>
-                <td class="align-right">20327</td>
-                <td class="align-right">5618</td>
-                <td class="align-right">1:25:44</td>
-                <td class="team-cell">
-                    <h5>Team Gardeners</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/ditto.png" alt="Ditto" title="Ditto" class="portrait">
-                                <figcaption>Ditto</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vaporeon.png" alt="Vaporeon" title="Vaporeon" class="portrait">
-                                <figcaption> Vaporeon</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/scizor-shiny.png" alt="Scizor" title="Scizor" class="portrait">
-                                <figcaption> Lidelle</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Cover Band</li><li> X-Ray Specs</li><li> Huge Apple x2</li><li> Leppa Berry</li><li> Green Gummi</li><li> Wonder Gummi</li><li> Elixir x2</li><li> Shell Bell</li><li> Escape Orb</li><li> Recall Box</li><li> TM Aerial Ace</li><li> TM Swords Dance</li><li> Ambush Rock</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.6.9
-                    
-
-                </td>
-                <td class="monospace">21BAE7782D1B87B0</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2023-02-09_20-29-47.rsrec" target="_blank">2023-02-09_20-29-47.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+                  <li>Apple x3</li>
                 
-                <td class="player-cell">Trio-</td>
-                <td>2022-11-28</td>
-                <!--td>Spooks</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">3016</td>
-                <td class="align-right hidden">9150</td>
-                <td class="align-right">12066</td>
-                <td class="align-right">3337</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Spooks</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/honchkrow.png" alt="Honchkrow" title="Honchkrow" class="portrait">
-                                <figcaption>Honchkrow</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/vulpix.png" alt="Vulpix" title="Vulpix" class="portrait">
-                                <figcaption> Vulpix</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/flygon.png" alt="Flygon" title="Flygon" class="portrait">
-                                <figcaption> Flygone</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Apple x3</li><li> Leppa Berry x3</li><li> Lum Berry x3</li><li> Oran Berry x2</li><li> Reviver Seed</li><li> Recall Box</li><li> Sitrus Berry</li><li> Escape Orb</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.6.6
-                    
-
-                </td>
-                <td class="monospace">C9DB1D9473781C5D</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2022-11-28_15-54-48.rsrec" target="_blank">2022-11-28_15-54-48.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
-            <tr>
+                  <li> Leppa Berry x3</li>
                 
-                <td class="player-cell">Xindage</td>
-                <td>2022-11-28</td>
-                <!--td>Team Gardeners</td-->
-                <td class="result-cell"><span class="result-cleared">Cleared</span><br>
-                    <span class="floor" title="Depth: 17 pts">B17F</span>
-                </td>
-                <td class="align-right hidden">1975</td>
-                <td class="align-right hidden">8000</td>
-                <td class="align-right">9975</td>
-                <td class="align-right">2880</td>
-                <td class="align-right">-:--:--</td>
-                <td class="team-cell">
-                    <h5>Team Gardeners</h5>
-                    <div class="flex-container">
-                        <figure>
-                                <img src="/images/portraits/golem.png" alt="Golem" title="Golem" class="portrait">
-                                <figcaption>Beth</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/tyranitar.png" alt="Tyranitar" title="Tyranitar" class="portrait">
-                                <figcaption> Tyna</figcaption>
-                            </figure><figure>
-                                <img src="/images/portraits/drapion-shiny.png" alt="Drapion" title="Drapion" class="portrait">
-                                <figcaption> Drapion</figcaption>
-                            </figure></div>
-                </td>
-                <td class="item-cell">
-                    <ul class="item-list">
-                        <li>Cover Band</li><li> Weather Rock</li><li> X-Ray Specs</li><li> Huge Apple</li><li> Banana x2</li><li> Leppa Berry</li><li> Reviver Seed</li><li> Elixir x2</li><li> Escape Orb</li><li> Brown Apricorn</li>
-                    </ul>
-                </td>
-                <td>
-                    
-                        v0.6.6
-                    
+                  <li> Lum Berry x3</li>
+                
+                  <li> Oran Berry x2</li>
+                
+                  <li> Reviver Seed</li>
+                
+                  <li> Recall Box</li>
+                
+                  <li> Sitrus Berry</li>
+                
+                  <li> Escape Orb</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.6.6
+            
 
-                </td>
-                <td class="monospace">8208B75B2AECAAA7</td>
-                <td>
-                    <a href="/replays/sickly-hollow/2022-11-28_11-43-45.rsrec" target="_blank">2022-11-28_11-43-45.rsrec</a>
-                    
-                </td>
-                <!--td></td-->
-            </tr>
-        
+          </td>
+          <td class="monospace">C9DB1D9473781C5D</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2022-11-28_15-54-48.rsrec" target="_blank">2022-11-28_15-54-48.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
+        <tr>
+          
+          <td class="player-cell">Xindage</td>
+          <td>2022-11-28</td>
+          <!--td>Team Gardeners</td-->
+          <td class="result-cell">
+              <span class="result-cleared">
+              
+                Cleared</span><br>
+              <span class="floor" title="Depth: 17 pts">
+                    B
+                  17F</span>
+            </td>
+          </td>
+          <td class="align-right hidden">1975</td>
+          <td class="align-right hidden">8000</td>
+          <td class="align-right">9975</td>
+          <td class="align-right">2880</td>
+          <td class="align-right">
+            -:--:--
+            
+          </td>
+          <td class="team-cell">
+            <h5>Team Gardeners</h5>
+            <div class="flex-container">
+              <figure>
+                  <img
+                    src="/images/portraits/golem.png"
+                    alt="Golem"
+                    title="Golem"
+                    class="portrait">
+                  <figcaption>Beth</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/tyranitar.png"
+                    alt="Tyranitar"
+                    title="Tyranitar"
+                    class="portrait">
+                  <figcaption> Tyna</figcaption>
+                </figure><figure>
+                  <img
+                    src="/images/portraits/drapion-shiny.png"
+                    alt="Drapion"
+                    title="Drapion"
+                    class="portrait">
+                  <figcaption> Drapion</figcaption>
+                </figure></div>
+          </td>
+          
+            <td class="item-cell">
+              <ul class="item-list">
+                
+                  <li>Cover Band</li>
+                
+                  <li> Weather Rock</li>
+                
+                  <li> X-Ray Specs</li>
+                
+                  <li> Huge Apple</li>
+                
+                  <li> Banana x2</li>
+                
+                  <li> Leppa Berry</li>
+                
+                  <li> Reviver Seed</li>
+                
+                  <li> Elixir x2</li>
+                
+                  <li> Escape Orb</li>
+                
+                  <li> Brown Apricorn</li>
+                
+              </ul>
+            </td>
+          
+          <td>
+            
+              v0.6.6
+            
+
+          </td>
+          <td class="monospace">8208B75B2AECAAA7</td>
+          <td>
+            
+              <a href="/replays/sickly-hollow/2022-11-28_11-43-45.rsrec" target="_blank">2022-11-28_11-43-45.rsrec</a>
+            
+            
+          </td>
+          <!--td></td-->
+        </tr>
+      
     </table>
+  
 </div>
 
     

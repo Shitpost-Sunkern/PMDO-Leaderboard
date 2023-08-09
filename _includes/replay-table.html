@@ -51,11 +51,11 @@
                 {%- if page.multi_segment -%}
                   {{ replay["Segment"] }}
                   {% if page.is_basement[replay["Segment"]] %}
-                    {{ "B" }}{% endif %}
+                    {{ "B" }}{%- endif -%}
                   {{ replay["Floor"] }}F
                 {%- else -%}
                   {%- if page.is_basement %}
-                    {{ "B" }}{% endif %}
+                    {{ "B" }}{%- endif -%}
                   {{ replay["Floor"] }}F
                 {%- endif -%}
               </span>

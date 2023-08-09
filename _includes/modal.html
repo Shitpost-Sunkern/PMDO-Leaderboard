@@ -7,26 +7,27 @@
 
 {% assign board_name = page.title | remove: ' - Story' | remove: ' - Roguelocke' | slugify | append: '-rubric' %}
 
-<h5>Depth scoring</h5>
-<table class='depth-rubric'>
-    {% if page.multi_segment %}
-        <tr><th>Segment</th><th>Floor</th><th>Depth points</th></tr>
-        {% assign previous_segment = "" %}
-        {% for floor in site.data[board_name] %}
-            <tr>
-                <td>{% if floor['Segment'] != previous_segment %}{{floor['Segment']}}{% endif %}</td>
-                <td>{% if page.is_basement[replay["Segment"]] %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
-                <td>{{floor['Depth']}} pts</td>
-            </tr>
-            {% assign previous_segment = floor['Segment'] %}
-        {% endfor %}
-    {% else %}
-        <tr><th>Floor</th><th>Depth points</th></tr>
-        {% for floor in site.data[board_name] %}
-            <tr>
-                <td>{% if page.is_basement %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
-                <td>{{floor['Depth']}} pts</td>
-            </tr>
-        {% endfor %}
-    {% endif %}
-</table>
+{% if page.multi_segment %}
+    <h5>Depth scoring</h5>
+    <table class='depth-rubric'>
+        
+            <tr><th>Segment</th><th>Floor</th><th>Depth points</th></tr>
+            {% assign previous_segment = "" %}
+            {% for floor in site.data[board_name] %}
+                <tr>
+                    <td>{% if floor['Segment'] != previous_segment %}{{floor['Segment']}}{% endif %}</td>
+                    <td>{% if page.is_basement[replay["Segment"]] %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
+                    <td>{{floor['Depth']}} pts</td>
+                </tr>
+                {% assign previous_segment = floor['Segment'] %}
+            {% endfor %}
+            {% comment %}{% else %}
+            <tr><th>Floor</th><th>Depth points</th></tr>
+            {% for floor in site.data[board_name] %}
+                <tr>
+                    <td>{% if page.is_basement %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
+                    <td>{{floor['Depth']}} pts</td>
+                </tr>
+            {% endfor %}{% endcomment %}
+    </table>
+{% endif %}

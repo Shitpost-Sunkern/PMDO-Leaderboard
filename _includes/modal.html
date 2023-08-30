@@ -16,7 +16,7 @@
             {% for floor in site.data[board_name] %}
                 <tr>
                     <td>{% if floor['Segment'] != previous_segment %}{{floor['Segment']}}{% endif %}</td>
-                    <td>{% if page.is_basement[replay["Segment"]] %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
+                    <td>{% if page.is_basement[floor["Segment"]] %}{{"B"}}{% endif %}{{floor['Floor']}}F</td>
                     <td>{{floor['Depth']}} pts</td>
                 </tr>
                 {% assign previous_segment = floor['Segment'] %}

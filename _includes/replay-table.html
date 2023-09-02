@@ -88,12 +88,17 @@
             </div>
           </td>
           {% unless include.is_roguelocke %}
-            <td class="item-cell">{% assign items = replay["Starting Items"] | split: "," %}
-              <ul class="item-list">
-                {% for item in items %}
-                  <li>{{ item }}</li>
-                {% endfor %}
-              </ul>
+            <td class="item-cell">
+              {% if replay["Starting Items"] == "(none)" %}
+                Brought no items.
+              {% else %}
+                {% assign items = replay["Starting Items"] | split: "," %}
+                <ul class="item-list">
+                  {% for item in items %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             </td>
           {% endunless %}
           <td>

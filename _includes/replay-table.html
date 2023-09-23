@@ -37,7 +37,13 @@
           {% if include.is_leaderboard %}
             {% assign count = count | plus: 1 %}<td class="align-right">{{ count }}</td>
           {% endif %}
-          <td class="player-cell">{{ replay["Player"] }}</td>
+          <td class="player-cell">
+            {%- if replay["Player Ruby"] == "" or replay["Player Ruby"] == nil -%}
+              {{ replay["Player"] }}
+            {%- else -%}
+              <ruby><rb>{{ replay["Player"] }}</rb><rt>{{ replay["Player Ruby"] }}</rt></ruby>
+            {%- endif -%}
+          </td>
           <td>{{ replay["Date"] }}</td>
           <!--td>{{replay["Team Name"]}}</td-->
           <td class="result-cell">

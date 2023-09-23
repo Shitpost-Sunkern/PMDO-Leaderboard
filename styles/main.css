@@ -87,6 +87,10 @@ span.floor { cursor: help; }
 
 .mod-list .mod-name { font-weight: bold; margin-right: 0.25em; }
 
+rt { font-size: 60%; }
+
+rb { font-family: "Kiwi Maru", sans-serif; }
+
 body.theme-solid { background-image: linear-gradient(var(--bg-color-1), var(--bg-color-2)); height: 100%; background-repeat: no-repeat; background-attachment: fixed; color: var(--text-color); }
 
 body.theme-solid td, body.theme-solid nav a, body.theme-solid .inner, body.theme-solid select { background-color: var(--fg-color-light1); }

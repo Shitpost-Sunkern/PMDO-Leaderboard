@@ -84,7 +84,7 @@
                 {%- assign species = member | split: "/" | last -%}
                 {%- assign nickname = member | split: "/" | first -%}<figure>
                   <img
-                    src="{{site.baseurl}}/images/portraits/{{species | slugify}}.png"
+                    src="{{site.baseurl}}/images/portraits/{{species | slugify: pretty}}.png"
                     alt="{{species | split: "|" | first }}"
                     title="{{species | split: "|" | first }}"
                     class="portrait">

@@ -169,7 +169,57 @@ body.theme-gradient nav a:link { color: var(--text-color); }
 
 body.theme-gradient nav a:hover { text-decoration: none; }
 
+body.theme-gradient #modal-container { background-image: linear-gradient(var(--fg-color-dark1-top), var(--fg-color-dark1-bottom)); border-bottom: 2px solid var(--fg-color-dark2); box-shadow: 2px 2px 4px var(--fg-color-dark3); }
+
+body.theme-gradient #modal-inner { background-color: var(--fg-color-light1); }
+
+body.theme-gradient table.depth-rubric th { border-top: 1px solid var(--fg-color-dark1); }
+
+body.theme-gradient table.depth-rubric tr:last-of-type td { border-bottom: 1px solid var(--fg-color-dark1); }
+
+body.theme-gradient table.depth-rubric tr th:first-child, body.theme-gradient table.depth-rubric tr td:first-child { border-left: 1px solid var(--fg-color-dark1); }
+
+body.theme-gradient table.depth-rubric tr th:last-child, body.theme-gradient table.depth-rubric tr td:last-child { border-right: 1px solid var(--fg-color-dark1); }
+
 body.theme-rescue-team { --text-color: black; --fg-color-light1: rgba(255, 255, 255, 0.9); --fg-color-light2: rgba(255, 255, 255, 0.5); --fg-color-dark1-top: #ff302b; --fg-color-dark1-bottom: #008bde; --fg-color-dark2: #0a6aab; --fg-color-dark3: rgba(4, 25, 44, 0.5); --bg-color-1: #1078e8; --bg-color-2: #60c0e8; --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
+
+body.theme-wishmaker { --bg-image: url("/images/bg/wishmaker_bg_stars.png"); --text-color: black; --fg-color-light1: rgba(255, 255, 255, 0.6); --fg-color-light2: rgba(255, 255, 255, 0.85); --fg-color-dark1-top: #f88ef1; /*#4fcbfc;*/ --fg-color-dark1-bottom: #6fefb5; --fg-color-dark2: #0d9568; --fg-color-dark3: #1c3d6d; --bg-color-1: #8baac5; --bg-color-2: #1c3d6d; --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
+
+body.theme-image-solid { background-image: var(--bg-image); height: 100%; background-size: cover; background-attachment: fixed; color: var(--text-color); }
+
+body.theme-image-solid td, body.theme-image-solid nav a, body.theme-image-solid .inner, body.theme-image-solid select { background-color: var(--fg-color-light1); }
+
+body.theme-image-solid th, body.theme-image-solid nav a:hover, body.theme-image-solid nav strong, body.theme-image-solid h1 div, body.theme-image-solid h2 div, body.theme-image-solid h3 div { background-color: var(--fg-color-light2); }
+
+body.theme-image-solid .about, body.theme-image-solid div.leaderboard, body.theme-image-solid nav, body.theme-image-solid h1, body.theme-image-solid h2, body.theme-image-solid h3, body.theme-image-solid div.dropdown { background-color: var(--fg-color-dark1); border-bottom: 2px solid var(--fg-color-dark2); box-shadow: 2px 2px 4px var(--fg-color-dark3); }
+
+body.theme-image-solid .portrait { border-color: var(--fg-color-dark2); }
+
+body.theme-image-solid a { text-decoration: none; }
+
+body.theme-image-solid a:link { color: var(--link-color); }
+
+body.theme-image-solid a:hover { text-decoration: underline; }
+
+body.theme-image-solid a:active { color: var(--link-active-color); }
+
+body.theme-image-solid nav a:link { color: var(--text-color); }
+
+body.theme-image-solid nav a:hover { text-decoration: none; }
+
+body.theme-image-solid #modal-container { background-color: var(--fg-color-dark1); border-bottom: 2px solid var(--fg-color-dark2); box-shadow: 2px 2px 4px var(--fg-color-dark3); }
+
+body.theme-image-solid #modal-inner { background-color: var(--fg-color-light1); }
+
+body.theme-image-solid table.depth-rubric th { border-top: 1px solid var(--fg-color-dark1); }
+
+body.theme-image-solid table.depth-rubric tr:last-of-type td { border-bottom: 1px solid var(--fg-color-dark1); }
+
+body.theme-image-solid table.depth-rubric tr th:first-child, body.theme-image-solid table.depth-rubric tr td:first-child { border-left: 1px solid var(--fg-color-dark1); }
+
+body.theme-image-solid table.depth-rubric tr th:last-child, body.theme-image-solid table.depth-rubric tr td:last-child { border-right: 1px solid var(--fg-color-dark1); }
+
+body.theme-wishmaker-glass { --bg-image: url("/images/bg/wishmaker_bg_stars.png"); --text-color: black; --fg-color-light1: #fff9; --fg-color-light2: #ffd1eabb; --fg-color-dark1: rgba(255,255,255,.5); --fg-color-dark2: rgba(255,255,255,.5); --fg-color-dark3: #1d3e6e; --link-color: rgb(0, 93, 233); --link-color-active: rgb(235, 200, 0); }
 
 /* body.theme-spooky { background-image: linear-gradient(rgb(109, 117, 187), rgb(91, 83, 119),); height: 100%; background-repeat: no-repeat; background-attachment: fixed; td, nav a { background-color: #ecf; } th, nav a:hover, nav strong, h2 div, h1 div { background-color: #c296d7; } div.leaderboard, nav, h1, h2, div.dropdown { background-color: #609; border-bottom: 2px solid #306; box-shadow: 2px 2px 4px rgba(16, 0, 32, 0.5); } .portrait { border-color: #306; } a { text-decoration: none; &:link { color: rgb(0, 93, 233); } &:hover { text-decoration: underline; } &:active { color: rgb(235, 200, 0); } } nav a { &:link { color: black; } &:hover { text-decoration: none; } } } */
 figure { display: inline-block; margin: 0 .1em; text-align: center; /*flex: auto;*/ }

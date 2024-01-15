@@ -272,6 +272,33 @@ body.theme-gradient {
 			text-decoration: none;
 		}
 	}
+
+	#modal-container {
+		background-image: linear-gradient(var(--fg-color-dark1-top), var(--fg-color-dark1-bottom),);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+	
+	#modal-inner {
+		background-color: var(--fg-color-light1);
+	}
+
+	table.depth-rubric {	
+		// border: 1px solid var(--fg-color-dark1);
+
+		th { 
+			border-top: 1px solid var(--fg-color-dark1);
+		}
+		tr:last-of-type td { 
+			border-bottom: 1px solid var(--fg-color-dark1);
+		}
+		tr th:first-child, tr td:first-child {
+			border-left: 1px solid var(--fg-color-dark1);
+		}
+		tr th:last-child, tr td:last-child {
+			border-right: 1px solid var(--fg-color-dark1);
+		}
+	}
 }
 
 body.theme-rescue-team {
@@ -287,6 +314,113 @@ body.theme-rescue-team {
 	--link-color: rgb(0, 93, 233);
 	--link-color-active: rgb(235, 200, 0);
 }
+
+body.theme-wishmaker {
+	--bg-image: url("/images/bg/wishmaker_bg_stars.png");
+	--text-color: black;
+	// --fg-color-light1: #fcddee;
+	// --fg-color-light2: #ffed88;
+	--fg-color-light1: rgba(255, 255, 255, 0.6);
+	--fg-color-light2: rgba(255, 255, 255, 0.85);
+	--fg-color-dark1-top: #f88ef1; /*#4fcbfc;*/
+	--fg-color-dark1-bottom: #6fefb5;
+	--fg-color-dark2: #0d9568;
+	--fg-color-dark3: #1c3d6d;
+	--bg-color-1: #8baac5;
+	--bg-color-2: #1c3d6d;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);	
+}
+
+// Image BG Themes
+
+body.theme-image-solid {
+	background-image: var(--bg-image);
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	color: var(--text-color);
+
+	td, nav a, .inner, select {
+		background-color: var(--fg-color-light1);
+	}
+
+	th, nav a:hover, nav strong, h1 div, h2 div, h3 div {
+		background-color: var(--fg-color-light2);
+	}
+
+	.about, div.leaderboard, nav, h1, h2, h3, div.dropdown {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+
+	.portrait {
+		border-color: var(--fg-color-dark2);
+	}
+
+	a {
+		text-decoration: none;
+	
+		&:link {
+			color: var(--link-color);
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			color: var(--link-active-color);
+		}
+	}
+
+	nav a {
+		&:link {
+			color: var(--text-color);
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	#modal-container {
+		background-color: var(--fg-color-dark1);
+		border-bottom: 2px solid var(--fg-color-dark2);
+		box-shadow: 2px 2px 4px var(--fg-color-dark3);
+	}
+	
+	#modal-inner {
+		background-color: var(--fg-color-light1);
+	}
+
+	table.depth-rubric {	
+		// border: 1px solid var(--fg-color-dark1);
+
+		th { 
+			border-top: 1px solid var(--fg-color-dark1);
+		}
+		tr:last-of-type td { 
+			border-bottom: 1px solid var(--fg-color-dark1);
+		}
+		tr th:first-child, tr td:first-child {
+			border-left: 1px solid var(--fg-color-dark1);
+		}
+		tr th:last-child, tr td:last-child {
+			border-right: 1px solid var(--fg-color-dark1);
+		}
+	}
+}
+
+body.theme-wishmaker-glass {
+	--bg-image: url("/images/bg/wishmaker_bg_stars.png");
+	--text-color: black;
+	--fg-color-light1: #fff9;
+	--fg-color-light2: #ffd1eabb;
+	--fg-color-dark1: rgba(255,255,255,.5);
+	--fg-color-dark2: rgba(255,255,255,.5);
+	--fg-color-dark3: #1d3e6e;
+	--link-color: rgb(0, 93, 233);
+	--link-color-active: rgb(235, 200, 0);
+  }
 
 // Unused Themes
 

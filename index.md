@@ -30,15 +30,13 @@ You can also share any interesting runs you have that don't necessarily beat you
 
 #### Categories
 
-Presently, we're tracking two categories for runs: Story (your main save) and Roguelocke. Additionally, we're only tracking records for level reset dungeons. Some level reset dungeons don't have Roguelocke available, in which case they will only have one category.
+Presently, we're tracking two categories for runs: Story (your main save) and Roguelocke. Additionally, we're only tracking records for level reset dungeons. Some level reset dungeons don't have Roguelocke available, or some are only resets in Roguelocke, in which case they will only have one category.
 
 If you don't see a tab for a particular dungeon + category, it's because no one's submitted a replay for it yet. Quick, do a run and send us the replay! You'll get first place by default!
-
-If a particular seed becomes popular for seeded runs, or if a dungeon in a quest becomes popular, we might add a category for that too.
 
 
 #### Other rules
 
-Runs must play back without desync on either a vanilla installation of PMDO (of the correct version) or an installation with only Gender Unlock enabled to be accepted.
+For base game dungeons, runs must play back without desync on either a vanilla installation of PMDO (of the correct version) or an installation with only Gender Unlock enabled to be accepted. All Pokémon used must be of a species obtainable on a vanilla installation of PMDO.
 
-All Pokémon used must be of a species obtainable on a vanilla installation of PMDO.
+For mod dungeons, runs must play back without desync on an installation of PMDO (of the correct version) with just the mod providing the dungeon and its prerequisites, or the same with Gender Unlock added.

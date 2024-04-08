@@ -54,15 +54,19 @@
                 {% endif %}
                 {{ replay["Result"] }}</span><br>
               <span class="floor" title="Depth: {{replay['Depth']}} pts">
-                {%- if page.multi_segment -%}
+                {% if replay["Floor"] == blank and page.multi_segment %}
                   {{ replay["Segment"] }}
-                  {% if page.is_basement[replay["Segment"]] %}
-                    {{ "B" }}{%- endif -%}
-                  {{ replay["Floor"] }}F
-                {%- else -%}
-                  {%- if page.is_basement %}
-                    {{ "B" }}{%- endif -%}
-                  {{ replay["Floor"] }}F
+                {% else %}
+                  {%- if page.multi_segment -%}
+                    {{ replay["Segment"] }}
+                    {% if page.is_basement[replay["Segment"]] %}
+                      {{ "B" }}{%- endif -%}
+                    {{ replay["Floor"] }}F
+                  {%- else -%}
+                    {%- if page.is_basement and replay["Floor"] %}
+                      {{ "B" }}{%- endif -%}
+                    {{ replay["Floor"] }}F
+                  {%- endif -%}
                 {%- endif -%}
               </span>
             </td>
